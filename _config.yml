@@ -1,14 +1,21 @@
-title:              Data Science Africa
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/dsablog" # the subpath of your site, e.g. /blog
+title: "Data Science Africa Blog" # the name of your site, e.g. ACME Corp.
+collections:
+  events:
+    output: true
+future: true
+# title:              Data Science Africa
 email:              info@datascienceafrica.org
 description:        A Blog on Data Science Africa Events
 author:             Data Science Africa
 #baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+#url:                "https://startbootstrap.github.io"
 
 # Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
+twitter_username:   @dsa_org
+github_username:    
+facebook_username:  
 instagram_username:  
 linkedin_username:
 
