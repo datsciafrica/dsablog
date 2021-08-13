@@ -1,1 +1,1 @@
-Sitemap: https://startbootstrap.github.io/sitemap.xml
+Sitemap: /dsablog/sitemap.xml
