@@ -1,4 +1,235 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://startbootstrap.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://startbootstrap.github.io/" rel="alternate" type="text/html" /><updated>2021-07-29T17:10:52+03:00</updated><id>https://startbootstrap.github.io/feed.xml</id><title type="html">Data Science Africa</title><subtitle>A Blog on Data Science Africa Events</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">Data Science Africa (DSA) Uganda Network</title><link href="https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network.html" rel="alternate" type="text/html" title="Data Science Africa (DSA) Uganda Network" /><published>2021-06-25T17:45:13+03:00</published><updated>2021-06-25T17:45:13+03:00</updated><id>https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network</id><content type="html" xml:base="https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network.html">&lt;p&gt;Two members of the Lab are on the interim coordination team for setting up DSA Uganda network whose mission is an all-inclusive network of data scientists, enthusiasts, and organisations inspired to grow data science skills and their usage to contribute to Uganda's development aspirations, as started in the National Development Plan III (NDPIII). The network also has clear objectives and proposed activities  for details visit the  &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/&quot;&gt;website: http://www.datascienceafrica.org/dsaUganda/&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://startbootstrap.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://startbootstrap.github.io/" rel="alternate" type="text/html" /><updated>2021-08-13T16:35:25+03:00</updated><id>https://startbootstrap.github.io/feed.xml</id><title type="html">Data Science Africa</title><subtitle>A Blog on Data Science Africa Events</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">Data driven Covid-19 solutions in Africa</title><link href="https://startbootstrap.github.io/2021/08/12/data-driven-covid-19-solutions-in-africa.html" rel="alternate" type="text/html" title="Data driven Covid-19 solutions in Africa" /><published>2021-08-12T17:45:13+03:00</published><updated>2021-08-12T17:45:13+03:00</updated><id>https://startbootstrap.github.io/2021/08/12/data-driven-covid-19-solutions-in-africa</id><content type="html" xml:base="https://startbootstrap.github.io/2021/08/12/data-driven-covid-19-solutions-in-africa.html">&lt;p&gt;Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 Pandemic. These solutions aim to:&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Increase the effectiveness &lt;b&gt;of emergency response&lt;/b&gt; (like monitoring the extent of the disease spread among populations);&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Improve surveillance&lt;/b&gt; (by estimating the prevalence of Covid-19 and understanding the symptoms); and &lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;Aid decision making&lt;/b&gt; (by investigating how different policy interventions have affected businesses, livelihoods, and economies).&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+&lt;p&gt;By reviewing the landscape of data science-enabled Covid-19 response projects in Africa, this project aims to identify policy interventions that can enable more effective data sharing in future.&lt;/p&gt;
+
+&lt;h3&gt;Where are these solutions located?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&amp;publish=yes&amp;:display_count=n&amp;:origin=viz_share_link&quot;&gt;https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&amp;publish=yes&amp;:display_count=n&amp;:origin=viz_share_link&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class='tableauPlaceholder' id='viz1628845703903' style='position: relative'&gt;&lt;noscript&gt;&lt;a href='#'&gt;&lt;img alt='Dashboard 1 ' src='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;DD&amp;#47;DDCSC&amp;#47;Dashboard1&amp;#47;1_rss.png' style='border: none' /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class='tableauViz'  style='display:none;'&gt;&lt;param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /&gt; &lt;param name='embed_code_version' value='3' /&gt; &lt;param name='site_root' value='' /&gt;&lt;param name='name' value='DDCSC&amp;#47;Dashboard1' /&gt;&lt;param name='tabs' value='no' /&gt;&lt;param name='toolbar' value='yes' /&gt;&lt;param name='static_image' value='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;DD&amp;#47;DDCSC&amp;#47;Dashboard1&amp;#47;1.png' /&gt; &lt;param name='animate_transition' value='yes' /&gt;&lt;param name='display_static_image' value='yes' /&gt;&lt;param name='display_spinner' value='yes' /&gt;&lt;param name='display_overlay' value='yes' /&gt;&lt;param name='display_count' value='yes' /&gt;&lt;param name='language' value='en-US' /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type='text/javascript'&gt;                    var divElement = document.getElementById('viz1628845703903');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth &gt; 800 ) { vizElement.style.width='100%';vizElement.style.height='851px';} else if ( divElement.offsetWidth &gt; 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)&lt;/span&gt;
+
+
+
+
+&lt;p&gt;In April(2021), we set out to collect data about data driven Covid-19 solutions in Africa, with the aim of analysing various characteristics of the projects and  developing a data sharing framework for social good beyond Covid-19 in the African context. We wanted to explore the datasets and data access strategies used, the skills and expertise needed for effective collaborations, technical requirements, and barriers to effective data sharing. Our objective for this review was to learn more about the challenges and opportunities encountered on various projects. We hope to establish where projects face common challenges, where there is consensus about the need for policy intervention, and what type of policy intervention could help. &lt;/p&gt;
+
+
+&lt;p&gt;To date, we have collected about 65 data driven Covid-19 solutions and initiatives in Africa from both &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdLSRSxjIVZeXqVLcWbtv1t_IqzXP6gXbhFCIfzeIulDY6DhA/viewform&quot;&gt;the survey&lt;/a&gt; and targeted online search. This write up is an overview of our findings and a summary of the ongoing and future work towards developing a data sharing framework and contributing to &lt;a href=&quot;http://www.datascienceafrica.org/dsa-visiting-fellowship/&quot;&gt;Data Science Africa’s efforts to support data policies&lt;/a&gt; in Africa.&lt;/p&gt;
+
+&lt;h3&gt;What do we know so far?&lt;/h3&gt;
+
+
+
+
+&lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://code.highcharts.com/highcharts-more.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://code.highcharts.com/modules/exporting.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://code.highcharts.com/modules/accessibility.js&quot;&gt;&lt;/script&gt;
+
+&lt;figure class=&quot;highcharts-figure&quot;&gt;
+    &lt;div id=&quot;packedBubble&quot;&gt;&lt;/div&gt;
+    
+&lt;/figure&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+Highcharts.chart('packedBubble', {
+    chart: {
+        type: 'packedbubble',
+        height: '100%'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        useHTML: true,
+        pointFormat: '&lt;b&gt;{point.name}:&lt;/b&gt; {point.value}'
+    },
+                    colors: [
+                    '#5D6263',
+                    '#CF5C42',
+                    '#00447C',
+                    '#00AEEF', 
+                    '#F4D5E3', 
+                    '#487D7D', 
+                    '#ACE8E6', 
+                    '#E7E247'
+                    ],
+    plotOptions: {
+        packedbubble: {
+            minSize: '30%',
+            maxSize: '120%',
+            zMin: 0,
+            zMax: 30,
+            layoutAlgorithm: {
+                splitSeries: false,
+                gravitationalConstant: 0.02
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: &lt;b&gt;{point.value}&lt;/b&gt;',
+                filter: {
+                    property: 'y',
+                    operator: '&gt;',
+                    value: 5
+                },
+                style: {
+                    color: 'black',
+                    textOutline: 'none',
+                    fontWeight: 'normal'
+                }
+            }
+        }
+    },
+    series: [ {
+        name: 'No of Solutions',
+        data: [{
+            name: &quot;Replicable Data Driven Solutions&quot;,
+            value: 6
+        },
+        {
+            name: &quot;Data Driven Research Papers&quot;,
+            value: 9
+        },
+        {
+            name: &quot;Other Data Driven Covid-19 Resources&lt;br&gt;(webiners, articles, AI enabled solutions etc)&quot;,
+            value: 10
+        },
+        {
+            name: &quot;Covid-19 Data Resources&quot;,
+            value: 14
+        }]
+    }]
+});
+
+&lt;/script&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 2: shows The data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.  &lt;/span&gt;
+
+
+
+
+
+&lt;figure class=&quot;highcharts-figure&quot;&gt;
+    &lt;div id=&quot;container1&quot;&gt;&lt;/div&gt;
+    
+&lt;/figure&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+Highcharts.chart('container1', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Summary of data types used (as of the data collected)'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Mobile Phone Data', 'Official Health Data &amp;amp; Covid Statistics', 'Social Media, Search &amp;amp; News Data', 'Satellite Imagery', 'Survey &amp;amp; Other Data', 'Financial Data', 'X-ray Imagery'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '#',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: '#',
+        data: [10, 6, 4, 2, 2, 1, 1]
+    }]
+});
+&lt;/script&gt;
+&lt;span class=&quot;caption text-muted&quot;&gt;Figure 3: shows a Summary of data types used (as of the data collected)&lt;/span&gt;
+
+
+
+&lt;p&gt;We have tried to explore the status (i.e., level of solution uptake in the real world) of the projects in our database by categorizing them as; &lt;b&gt;pilot not ready to deploy, pilot ready to deploy&lt;/b&gt; and &lt;b&gt;in use&lt;/b&gt;. This kind of analysis will help us draw some insights into solution uptake and what roles various factors like data used, nature of collaborations, stakeholders involved and more, play in solution uptake.  Extracting any patterns in projects that get used and those that stay at pilot level (or research level) can provide insights that can help inform future approaches to projects, to increase their chances of being adopted in the real world. &lt;/p&gt;
+
+
+
+&lt;h3&gt;What’s in progress?&lt;/h3&gt;
+&lt;p&gt;We are currently conducting a case-by-case analysis of the Covid-19 solutions to establish the Africa situation in regards to data sharing for social good and also identify focal points for targeted engagements.  Survey responses so far have highlighted the following key areas for action:&lt;/p&gt;
+
+&lt;h5&gt;-&gt; Data:&lt;/h5&gt;
+&lt;p&gt;A variety of different data types can be used in Covid-19 response, and different data types will pose different analytical challenges. Data scientists are grappling with issues of accessibility and usability, with different levels of data quality or data formats, and with questions about storage and sharing formats, and replicable frameworks available to process and analyze various data types&lt;/p&gt;
+
+
+&lt;h5&gt;-&gt; Collaborations:&lt;/h5&gt;
+&lt;p&gt;For an application to work well once deployed, it must be designed with user needs in mind. Survey respondents have been grappling with understanding which stakeholders have what requirements, and how best to engage with different potential user groups, defining the roles that different actors play across a project’s life, uptake, and impact. &lt;/p&gt;
+
+
+&lt;h5&gt;-&gt; Skills:&lt;/h5&gt;
+&lt;p&gt;Effective deployment of data science applications requires teams with diverse skillsets that can engage different stakeholders. Further work is now needed to understand what capabilities are needed in a data science team, and how to access this multidisciplinary expertise.&lt;/p&gt;
+
+&lt;h5&gt;-&gt; Data stewardship:&lt;/h5&gt;
+&lt;p&gt;In addition to issues of data access, a variety of data stewardship issues must be addressed to ensure trustworthy use of data. This project will seek to understand the challenges that arise across the data pipeline from creation, ownership, accessibility, and sharing for data analysis and use. This includes consideration of topics such as privacy, security, and the cultural norms that govern these practices and come up with checklist toolkits to aid future work.&lt;/p&gt;
+
+&lt;h5&gt;-&gt; Policy:&lt;/h5&gt;
+&lt;p&gt;Drawing from these experiences, this project will seek to establish how the challenges tie into the policy requirements of data access and use, and propose guidelines for handling requirements, barriers, opportunities, gaps, risks, and approaches to data sharing.&lt;/p&gt;
+
+
+&lt;h3&gt;What questions need to be answered?&lt;/h3&gt;
+
+&lt;p&gt;What data access strategies have been successful during and can be adopted from the Covid-19 response? How could these be adopted in the longer-term?&lt;/p&gt;
+
+&lt;p&gt;What intervention processes and procedures have proved productive in forming data collaborations for Covid-19 response? How have projects brought users or other stakeholders into project development?&lt;/p&gt;
+
+&lt;p&gt;What issues of data governance and data stewardship were encountered during the Covid-19 response? What privacy obligations, technical requirements and social and cultural barriers affect data sharing? &lt;/p&gt;
+
+&lt;p&gt;What roles do skills and expertise play in building effective data collaborations?&lt;/p&gt;
+
+&lt;p&gt;How can we build capabilities in the long-term?&lt;/p&gt;
+
+&lt;p&gt;What policy interventions would help address or lessen the impact of the current barriers to the use of data science in policy?&lt;/p&gt;
+
+&lt;p&gt;Why are some solutions more widespread and others not?&lt;/p&gt;
+
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;The study of the above mentioned factors (data, collaborations, skills, stewardship and policies) plus answering these questions will help us develop an operational context that fosters data sharing, and derive guidelines on &lt;b&gt;best practices&lt;/b&gt; that can be adapted and replicated, &lt;b&gt;lessons&lt;/b&gt; from what did not work and &lt;b&gt;recommendations&lt;/b&gt; from what has worked in the Covid-19 response. We will then map out practical actions that can create data ecosystems that foster data sharing, increasing the use of data for innovation and social good. &lt;/p&gt;
+
+&lt;span class=&quot;caption text-muted&quot;&gt;Acknowledgements for data collection go to: &lt;b&gt;Wuraola Oyewusi, Ayomide Owoyemi, Ernest Mwebaze, Jessica Oyugi, Aurelle Tchagna Kouanou, Tamaro Green, Ezekiel Adebayo Ogundepo and Vasileios Lampos.&lt;/b&gt;&lt;/span&gt;</content><author><name>Morine Amutorine &amp; Jessica Montgomery</name></author><summary type="html">Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 Pandemic. These solutions aim to:</summary></entry><entry><title type="html">Data Science Africa (DSA) Uganda Network</title><link href="https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network.html" rel="alternate" type="text/html" title="Data Science Africa (DSA) Uganda Network" /><published>2021-06-25T17:45:13+03:00</published><updated>2021-06-25T17:45:13+03:00</updated><id>https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network</id><content type="html" xml:base="https://startbootstrap.github.io/2021/06/25/data-science-africa-uganda-network.html">&lt;p&gt;Two members of the Lab are on the interim coordination team for setting up DSA Uganda network whose mission is an all-inclusive network of data scientists, enthusiasts, and organisations inspired to grow data science skills and their usage to contribute to Uganda's development aspirations, as started in the National Development Plan III (NDPIII). The network also has clear objectives and proposed activities  for details visit the  &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/&quot;&gt;website: http://www.datascienceafrica.org/dsaUganda/&lt;/a&gt;
 The network has so far organised three pre-launch events the details of follow in the next part of his annex.&lt;/p&gt;
 
 

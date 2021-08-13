@@ -1,0 +1,246 @@
+---
+layout: post
+title: "Data driven Covid-19 solutions in Africa"
+subtitle: "Project progress write up - Developing a data sharing framework for Africa - Lessons from Covid19 response."
+date: 2021-08-12 10:45:13 -0400
+background: '/img/bg-posts.jpeg'
+author: "Morine Amutorine & Jessica Montgomery"
+---
+
+<p>Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 Pandemic. These solutions aim to:</p>
+
+<ul>
+    <li>Increase the effectiveness <b>of emergency response</b> (like monitoring the extent of the disease spread among populations);</li>
+    <li><b>Improve surveillance</b> (by estimating the prevalence of Covid-19 and understanding the symptoms); and </li>
+    <li><b>Aid decision making</b> (by investigating how different policy interventions have affected businesses, livelihoods, and economies).</li>
+</ul>
+
+
+
+<p>By reviewing the landscape of data science-enabled Covid-19 response projects in Africa, this project aims to identify policy interventions that can enable more effective data sharing in future.</p>
+
+<h3>Where are these solutions located?</h3>
+
+<p><a href="https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link</a></p>
+
+<div class='tableauPlaceholder' id='viz1628845703903' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DD&#47;DDCSC&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DDCSC&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DD&#47;DDCSC&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628845703903');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='851px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<span class="caption text-muted">Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)</span>
+
+
+
+
+<p>In April(2021), we set out to collect data about data driven Covid-19 solutions in Africa, with the aim of analysing various characteristics of the projects and  developing a data sharing framework for social good beyond Covid-19 in the African context. We wanted to explore the datasets and data access strategies used, the skills and expertise needed for effective collaborations, technical requirements, and barriers to effective data sharing. Our objective for this review was to learn more about the challenges and opportunities encountered on various projects. We hope to establish where projects face common challenges, where there is consensus about the need for policy intervention, and what type of policy intervention could help. </p>
+
+
+<p>To date, we have collected about 65 data driven Covid-19 solutions and initiatives in Africa from both <a href="https://docs.google.com/forms/d/e/1FAIpQLSdLSRSxjIVZeXqVLcWbtv1t_IqzXP6gXbhFCIfzeIulDY6DhA/viewform">the survey</a> and targeted online search. This write up is an overview of our findings and a summary of the ongoing and future work towards developing a data sharing framework and contributing to <a href="http://www.datascienceafrica.org/dsa-visiting-fellowship/">Data Science Africa’s efforts to support data policies</a> in Africa.</p>
+
+<h3>What do we know so far?</h3>
+
+
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="packedBubble"></div>
+    
+</figure>
+<script type="text/javascript">
+Highcharts.chart('packedBubble', {
+    chart: {
+        type: 'packedbubble',
+        height: '100%'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        useHTML: true,
+        pointFormat: '<b>{point.name}:</b> {point.value}'
+    },
+                    colors: [
+                    '#5D6263',
+                    '#CF5C42',
+                    '#00447C',
+                    '#00AEEF', 
+                    '#F4D5E3', 
+                    '#487D7D', 
+                    '#ACE8E6', 
+                    '#E7E247'
+                    ],
+    plotOptions: {
+        packedbubble: {
+            minSize: '30%',
+            maxSize: '120%',
+            zMin: 0,
+            zMax: 30,
+            layoutAlgorithm: {
+                splitSeries: false,
+                gravitationalConstant: 0.02
+            },
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}: <b>{point.value}</b>',
+                filter: {
+                    property: 'y',
+                    operator: '>',
+                    value: 5
+                },
+                style: {
+                    color: 'black',
+                    textOutline: 'none',
+                    fontWeight: 'normal'
+                }
+            }
+        }
+    },
+    series: [ {
+        name: 'No of Solutions',
+        data: [{
+            name: "Replicable Data Driven Solutions",
+            value: 6
+        },
+        {
+            name: "Data Driven Research Papers",
+            value: 9
+        },
+        {
+            name: "Other Data Driven Covid-19 Resources<br>(webiners, articles, AI enabled solutions etc)",
+            value: 10
+        },
+        {
+            name: "Covid-19 Data Resources",
+            value: 14
+        }]
+    }]
+});
+
+</script>
+<span class="caption text-muted">Figure 2: shows The data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.  </span>
+
+
+
+
+
+<figure class="highcharts-figure">
+    <div id="container1"></div>
+    
+</figure>
+
+<script type="text/javascript">
+Highcharts.chart('container1', {
+    chart: {
+        type: 'bar'
+    },
+    title: {
+        text: 'Summary of data types used (as of the data collected)'
+    },
+    subtitle: {
+        text: ''
+    },
+    xAxis: {
+        categories: ['Mobile Phone Data', 'Official Health Data &amp; Covid Statistics', 'Social Media, Search &amp; News Data', 'Satellite Imagery', 'Survey &amp; Other Data', 'Financial Data', 'X-ray Imagery'],
+        title: {
+            text: null
+        }
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '#',
+            align: 'high'
+        },
+        labels: {
+            overflow: 'justify'
+        }
+    },
+    tooltip: {
+        valueSuffix: ''
+    },
+    plotOptions: {
+        bar: {
+            dataLabels: {
+                enabled: true
+            }
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'top',
+        x: -40,
+        y: 80,
+        floating: true,
+        borderWidth: 1,
+        backgroundColor:
+            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
+        shadow: true
+    },
+    credits: {
+        enabled: false
+    },
+    series: [{
+        name: '#',
+        data: [10, 6, 4, 2, 2, 1, 1]
+    }]
+});
+</script>
+<span class="caption text-muted">Figure 3: shows a Summary of data types used (as of the data collected)</span>
+
+
+
+<p>We have tried to explore the status (i.e., level of solution uptake in the real world) of the projects in our database by categorizing them as; <b>pilot not ready to deploy, pilot ready to deploy</b> and <b>in use</b>. This kind of analysis will help us draw some insights into solution uptake and what roles various factors like data used, nature of collaborations, stakeholders involved and more, play in solution uptake.  Extracting any patterns in projects that get used and those that stay at pilot level (or research level) can provide insights that can help inform future approaches to projects, to increase their chances of being adopted in the real world. </p>
+
+
+
+<h3>What’s in progress?</h3>
+<p>We are currently conducting a case-by-case analysis of the Covid-19 solutions to establish the Africa situation in regards to data sharing for social good and also identify focal points for targeted engagements.  Survey responses so far have highlighted the following key areas for action:</p>
+
+<h5>-> Data:</h5>
+<p>A variety of different data types can be used in Covid-19 response, and different data types will pose different analytical challenges. Data scientists are grappling with issues of accessibility and usability, with different levels of data quality or data formats, and with questions about storage and sharing formats, and replicable frameworks available to process and analyze various data types</p>
+
+
+<h5>-> Collaborations:</h5>
+<p>For an application to work well once deployed, it must be designed with user needs in mind. Survey respondents have been grappling with understanding which stakeholders have what requirements, and how best to engage with different potential user groups, defining the roles that different actors play across a project’s life, uptake, and impact. </p>
+
+
+<h5>-> Skills:</h5>
+<p>Effective deployment of data science applications requires teams with diverse skillsets that can engage different stakeholders. Further work is now needed to understand what capabilities are needed in a data science team, and how to access this multidisciplinary expertise.</p>
+
+<h5>-> Data stewardship:</h5>
+<p>In addition to issues of data access, a variety of data stewardship issues must be addressed to ensure trustworthy use of data. This project will seek to understand the challenges that arise across the data pipeline from creation, ownership, accessibility, and sharing for data analysis and use. This includes consideration of topics such as privacy, security, and the cultural norms that govern these practices and come up with checklist toolkits to aid future work.</p>
+
+<h5>-> Policy:</h5>
+<p>Drawing from these experiences, this project will seek to establish how the challenges tie into the policy requirements of data access and use, and propose guidelines for handling requirements, barriers, opportunities, gaps, risks, and approaches to data sharing.</p>
+
+
+<h3>What questions need to be answered?</h3>
+
+<p>What data access strategies have been successful during and can be adopted from the Covid-19 response? How could these be adopted in the longer-term?</p>
+
+<p>What intervention processes and procedures have proved productive in forming data collaborations for Covid-19 response? How have projects brought users or other stakeholders into project development?</p>
+
+<p>What issues of data governance and data stewardship were encountered during the Covid-19 response? What privacy obligations, technical requirements and social and cultural barriers affect data sharing? </p>
+
+<p>What roles do skills and expertise play in building effective data collaborations?</p>
+
+<p>How can we build capabilities in the long-term?</p>
+
+<p>What policy interventions would help address or lessen the impact of the current barriers to the use of data science in policy?</p>
+
+<p>Why are some solutions more widespread and others not?</p>
+
+
+<h3>Conclusion</h3>
+
+<p>The study of the above mentioned factors (data, collaborations, skills, stewardship and policies) plus answering these questions will help us develop an operational context that fosters data sharing, and derive guidelines on <b>best practices</b> that can be adapted and replicated, <b>lessons</b> from what did not work and <b>recommendations</b> from what has worked in the Covid-19 response. We will then map out practical actions that can create data ecosystems that foster data sharing, increasing the use of data for innovation and social good. </p>
+
+<span class="caption text-muted">Acknowledgements for data collection go to: <b>Wuraola Oyewusi, Ayomide Owoyemi, Ernest Mwebaze, Jessica Oyugi, Aurelle Tchagna Kouanou, Tamaro Green, Ezekiel Adebayo Ogundepo and Vasileios Lampos.</b></span>
+
+
+
+
+
