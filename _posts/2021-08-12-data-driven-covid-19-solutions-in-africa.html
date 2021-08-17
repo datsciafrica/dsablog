@@ -23,7 +23,7 @@ author: "Morine Amutorine & Jessica Montgomery"
 
 <p><a href="https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link">https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link</a></p>
 
-<div class='tableauPlaceholder' id='viz1628845703903' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DD&#47;DDCSC&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DDCSC&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;DD&#47;DDCSC&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1628845703903');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='851px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<img class="img-fluid" alt="" src="{{site.baseurl}}/img/posts/map.png">
 <span class="caption text-muted">Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)</span>
 
 
@@ -37,158 +37,22 @@ author: "Morine Amutorine & Jessica Montgomery"
 <h3>What do we know so far?</h3>
 
 
+<h5>Data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.</h5>
 
+    <center>
+       <img class="img-fluid" alt="" src="{{site.baseurl}}/img/posts/bars.png">
 
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/highcharts-more.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
-
-<figure class="highcharts-figure">
-    <div id="packedBubble"></div>
-    
-</figure>
-<script type="text/javascript">
-Highcharts.chart('packedBubble', {
-    chart: {
-        type: 'packedbubble',
-        height: '100%'
-    },
-    title: {
-        text: ''
-    },
-    tooltip: {
-        useHTML: true,
-        pointFormat: '<b>{point.name}:</b> {point.value}'
-    },
-                    colors: [
-                    '#5D6263',
-                    '#CF5C42',
-                    '#00447C',
-                    '#00AEEF', 
-                    '#F4D5E3', 
-                    '#487D7D', 
-                    '#ACE8E6', 
-                    '#E7E247'
-                    ],
-    plotOptions: {
-        packedbubble: {
-            minSize: '30%',
-            maxSize: '120%',
-            zMin: 0,
-            zMax: 30,
-            layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02
-            },
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}: <b>{point.value}</b>',
-                filter: {
-                    property: 'y',
-                    operator: '>',
-                    value: 5
-                },
-                style: {
-                    color: 'black',
-                    textOutline: 'none',
-                    fontWeight: 'normal'
-                }
-            }
-        }
-    },
-    series: [ {
-        name: 'No of Solutions',
-        data: [{
-            name: "Replicable Data Driven Solutions",
-            value: 6
-        },
-        {
-            name: "Data Driven Research Papers",
-            value: 9
-        },
-        {
-            name: "Other Data Driven Covid-19 Resources<br>(webiners, articles, AI enabled solutions etc)",
-            value: 10
-        },
-        {
-            name: "Covid-19 Data Resources",
-            value: 14
-        }]
-    }]
-});
-
-</script>
-<span class="caption text-muted">Figure 2: shows The data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.  </span>
+        <img style="height: 500px;"  class="img-fluid" alt="" src="{{site.baseurl}}/img/posts/circles.png">
+   
+   </center>     
 
 
 
 
 
-<figure class="highcharts-figure">
-    <div id="container1"></div>
-    
-</figure>
 
-<script type="text/javascript">
-Highcharts.chart('container1', {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Summary of data types used (as of the data collected)'
-    },
-    subtitle: {
-        text: ''
-    },
-    xAxis: {
-        categories: ['Mobile Phone Data', 'Official Health Data &amp; Covid Statistics', 'Social Media, Search &amp; News Data', 'Satellite Imagery', 'Survey &amp; Other Data', 'Financial Data', 'X-ray Imagery'],
-        title: {
-            text: null
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: '#',
-            align: 'high'
-        },
-        labels: {
-            overflow: 'justify'
-        }
-    },
-    tooltip: {
-        valueSuffix: ''
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{
-        name: '#',
-        data: [10, 6, 4, 2, 2, 1, 1]
-    }]
-});
-</script>
-<span class="caption text-muted">Figure 3: shows a Summary of data types used (as of the data collected)</span>
+
+<span class="caption text-muted">Figure 2: shows a Summary of data types used (as of the data collected)</span>
 
 
 
