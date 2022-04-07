@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/dsablog/2020/07/24/data-science-africa-support.html</loc>
-<lastmod>2020-07-24T17:45:13+03:00</lastmod>
+<loc>http://www.datascienceafrica.org/dsablog/2021/08/26/data-driven-covid-19-solutions-in-africa.html</loc>
+<lastmod>2021-08-26T17:45:13+03:00</lastmod>
 </url>
 <url>
-<loc>/dsablog/2021/06/25/data-science-africa-uganda-network.html</loc>
-<lastmod>2021-06-25T17:45:13+03:00</lastmod>
+<loc>http://www.datascienceafrica.org/dsablog/2021/12/14/what-worked.html</loc>
+<lastmod>2021-12-14T22:33:13+03:00</lastmod>
 </url>
 <url>
-<loc>/dsablog/2021/08/12/data-driven-covid-19-solutions-in-africa.html</loc>
-<lastmod>2021-08-12T17:45:13+03:00</lastmod>
+<loc>http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html</loc>
+<lastmod>2022-04-06T22:33:13+03:00</lastmod>
 </url>
 <url>
-<loc>/dsablog/about.html</loc>
+<loc>http://www.datascienceafrica.org/dsablog/about.html</loc>
 </url>
 <url>
-<loc>/dsablog/contact.html</loc>
+<loc>http://www.datascienceafrica.org/dsablog/contact.html</loc>
 </url>
 <url>
-<loc>/dsablog/posts/</loc>
+<loc>http://www.datascienceafrica.org/dsablog/posts/</loc>
 </url>
 <url>
-<loc>/dsablog/</loc>
+<loc>http://www.datascienceafrica.org/dsablog/</loc>
 </url>
 </urlset>

@@ -1,0 +1,99 @@
+---
+layout: post
+title: "COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda"
+subtitle: "English Code Mixed Social Media Data in Uganda"
+date: 2022-04-06 15:33:13 -0400
+background: "/img/misinformation-detection-and-sentiment.jpg"
+author: "Dr Joyce Nakatumba Nabende"
+---
+
+<p>The growth in the use of smartphones in Uganda has facilitated the increase in Internet usage and internet subscribers in the country. The Internet has provided a fertile ground to generate huge amounts of information on various web and mobile based social media platforms. Social media platforms have overtaken traditional media in facilitating social interactions on real time events. The ever increasing number of social media users has resulted in an increase in social media content. This content has proven to be helpful for decision making.  However, since there are no restrictions and limitations on the content posted on social media platforms, it has turned out that some of the posted content is invalid, inaccurate, potentially and intentionally harmful. This poses a need to develop solutions that can be used to detect false information and misinformation in social media text. Several studies have sought and continue to detect negative and inaccurate content shared on social media platforms. However, most of this research has focused on the English language and thus these applications can not be used in contexts that include low resourced languages like Luganda, a major local language in Uganda that is also commonly used on social media platforms.
+    </p>
+
+
+<p>The focus of this research was on building a system for misinformation detection and sentiment analysis from social media text on Ugandan social media platforms. Our focus was mainly around social media content related to the current COVID-19 pandemic in Uganda. This was important to understand perceptions of Ugandas related to Uganda Government’s COVID-19 transmission mitigation strategies from social media data.  As a first step, we collected data related to COVID-19 from Facebook and Twitter using open source scraping tools. The data was analyzed and some of the key findings were that the text was in English, Luganda or a codemix of English and other local Ugandan languages like Luganda and Runyankole. For privacy reasons, the data was anonymized to remove any personal identification information.</p>
+
+<p>To prepare the dataset for machine learning tasks, the data was annotated using the open source Doccano annotation tool. Prior to the data annotation task, annotation guidelines were defined which guided the annotation activity.</p>
+
+<p>Each social media datapoint was given the following labels: </p>
+
+<ul>
+    <li>Data Source: Facebook or Twitter </li>
+    <li>Language: 
+        <ul>
+            <li>English- text data point is purely in English.</li>
+            <li>Luganda - text data point is purely in Luganda.</li>
+            <li>Codeswitched- text data point contains words in English and Luganda or in English and Runyankole.</li>
+        </ul>
+    <li>Misinformation: To model for misinformation analysis; four labels were used:
+        <ul>
+            <li>Fake - statement is misleading.</li>
+            <li>Not_Fake - statement is not misleading.</li>
+            <li>Partially Fake - part of the statement is misleading.</li>
+            <li>Others - scenarios where we couldn't prove whether the statement is false or not false.</li>
+        </ul>
+    </li>  
+    <li>Aspect: Topics on COVID-19 which included: COVID-19, Cases, Standard Operating Procedures (SOPs), Non-pharmaceutical Interventions (NPIs), Truck drivers, Hospitals, Vaccine, Elections, Treatment, Testing, COVID-19 Impact, Border, COVID-19 Relief, Presidential address, Death</li>
+    <li>Sentiment: Tagged per Aspect with label of: Neutral, Positive and Negative. </li>
+</ul>
+
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/covid-19.png" width="100% center" style="padding:6px"></div>
+
+    <p>The figure above, shows an annotation of social media data in <strong>Luganda</strong>  with the misinformation tagged as <strong>Not_Fake</strong> and the aspect identified being <strong>Vaccine</strong> with a <strong>Neutral</strong> sentiment. </p>
+
+    <p>After data annotation, we carried out an exploratory data analysis of the annotated data set that consisted of 11,000 text data points.The data obtained from Twitter contributed the highest percentage 51.4% compared to Facebook data with 48.6%. 93% of the annotated data points were in English while Luganda and Codemixed data points formed 5% and 1% respectively.</p>
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/source-of-covid.png" width="50% center" style="padding:6px"></div>
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/language-distribution.png" width="60% center" style="padding:6px"></div>
+
+    <p>To gain more insights from the data, we drafted research questions to guide the data analysis.</p>
+
+    <p><i>Question 1: What is the spread of misinformation in the data obtained from Twitter compared to the data obtained from Facebook?</i></p>
+
+    <p>To answer this question, we considered the misinformation label in the data.  Much as Twitter data was more than the Facebook data in terms of quantity, most of the data tagged with the <strong>'Fake'</strong>, and <strong>'Partially Fake'</strong> labels was the Facebook data. This can be attributed to the data that we obtained from Facebook that allowed us to include people’s comments to the Facebook posts compared to the Twitter data where we were restricted to only the posts made by the accounts scrapped. Moreover, Twitter has a limited tweet length of 280 characters compared to Facebook which means that while people make posts on Facebook, they are at liberty to write more which can turn out to be a source of misinformation. The demographic of Twitter and Facebook users is highly varied with more elites and corporate individuals on Twitter compared to Facebook. Corporates are more conscious about what they post and double check their posts or tweets.</p>
+
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/misinformation-review-by-source.png" width="60% center" style="padding:6px"></div>
+
+    <p><i>Question 2: What is the spread of misinformation in the English social media data compared to Luganda or code switched data?</i></p>
+    
+    <p>A categorization based on language was made to compare the levels of misinformation associated with a particular language. </p>
+
+    <p>From this analysis, it was observed that most of the 'Fake' and 'Not Fake' posts were written in <strong>English</strong> while most of the posts in  <strong>Luganda</strong> and <strong>codemixed</strong> were tagged as 'Not_Fake' or 'Others'.</p>
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/misinformation-review-by-language.png" width="60% center" style="padding:6px"></div>
+
+
+    <p><i>Question 3: What is the spread of misinformation in the social media data obtained in 2020 compared to data obtained in 2021?</i></p>
+
+
+    <p>Generally, we observe that we had more posts with the misinformation labels:  <strong>'Fake'</strong>, and <strong>'Partially Fake'</strong> in 2021 compared to 2020. </p>
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/misinformation-review-by-year.png" width="60% center" style="padding:6px"></div>
+
+    <p>We also analyzed the misinformation data for 2021. From the data analysis, we observe that we had more posts labeled with misinformation in June and July 2021 compared to other months in the year. In June 2021, Uganda experienced its highest number of COVID-19 cases and deaths. This was attributed to the emergence of the Delta variant in the country.  Furthermore, all institutions of higher learning were closed  in June and a 42 days lockdown was announced for the transport and business sector. The lockdown was then lifted towards the end of July, however, schools remained closed. Considering all the events that were going on in the country at that time, we observed that there were many posts made on social media platforms and part of the data had misinformation labels.</p>
+
+    <p>Sample data points for that period:</p>
+
+    <p><i>A: “Covid19 is now a fertile business in Uganda, continue getting the money you in government”. </i></p>
+
+
+    <p>We observe that this post has misinformation on COVID-19. Our model was able to classify this post as “Fake” with a Negative sentiment. </p>
+
+    <p><i>B: “Okunoonyereza okukoleddwa ekitongole kulaze nti obwelaliikirivu bweyongedde mu bannayuganda olwembeera yekirwadde kya Covid-19 ekiyinza okwongera embeera yokwennyika ssinakindi endwadde zemitwe mu ggwanga”.</i></p>
+
+    <p>We observe that the post was about a research conducted on the impact of COVID-19. Our model was able to classify this post as “Not_Fake” with a Negative sentiment.</p>
+
+    <p><i>Question 4: What is the correlation between the sentiments across different aspects in the social media dataset  ?</i></p>
+
+    <p>During the COVID-19 pandemic, a number of topics drove conversations on social media platforms. These aspects ranged from the COVID-19 symptoms, COVID-19 restrictions by the government and their effects. The posts and tweets made about COVID-19, Non Pharmaceutical Interventions (NPIs) which included closure of schools, businesses and curfew, and COVID-19 cases had more negative sentiments. All these aspects had a negative impact on the people which justifies the results obtained. For example, some were about closure of people’s business, deaths of loved ones and family members.  Additionally aspects like COVID relief and treatment had positive sentiment this can be attributed to the food and cash relief issued by the government and the many recoveries witnessed from the COVID-19 patients.</p>
+
+    <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/posts/distribution-of-sentiments-per-aspect.png" width="60% center" style="padding:6px"></div>
+
+
+    <p>In conclusion, we see the potential in analyzing social media data to understand people’s sentiments to COVID-19 and its mitigation strategies in the country. We also observe that there is potential for the use of social media data for the spread of misinformation and the need to build misinformation classification models based on machine learning. </p>
+
+
+

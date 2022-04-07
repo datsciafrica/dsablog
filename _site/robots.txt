@@ -1,1 +1,1 @@
-Sitemap: /dsablog/sitemap.xml
+Sitemap: http://www.datascienceafrica.org/dsablog/sitemap.xml

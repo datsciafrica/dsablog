@@ -1,4 +1,159 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/dsablog/feed.xml" rel="self" type="application/atom+xml" /><link href="/dsablog/" rel="alternate" type="text/html" /><updated>2021-08-13T17:09:51+03:00</updated><id>/dsablog/feed.xml</id><title type="html">Data Science Africa Blog</title><subtitle>A Blog on Data Science Africa Events</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">Data driven Covid-19 solutions in Africa</title><link href="/dsablog/2021/08/12/data-driven-covid-19-solutions-in-africa.html" rel="alternate" type="text/html" title="Data driven Covid-19 solutions in Africa" /><published>2021-08-12T17:45:13+03:00</published><updated>2021-08-12T17:45:13+03:00</updated><id>/dsablog/2021/08/12/data-driven-covid-19-solutions-in-africa</id><content type="html" xml:base="/dsablog/2021/08/12/data-driven-covid-19-solutions-in-africa.html">&lt;p&gt;Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 Pandemic. These solutions aim to:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.datascienceafrica.org/dsablog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.datascienceafrica.org/dsablog/" rel="alternate" type="text/html" /><updated>2022-04-07T09:35:49+03:00</updated><id>http://www.datascienceafrica.org/dsablog/feed.xml</id><title type="html">Data Science Africa Blog</title><subtitle>Home for everything DSA</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda</title><link href="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html" rel="alternate" type="text/html" title="COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda" /><published>2022-04-06T22:33:13+03:00</published><updated>2022-04-06T22:33:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html">&lt;p&gt;The growth in the use of smartphones in Uganda has facilitated the increase in Internet usage and internet subscribers in the country. The Internet has provided a fertile ground to generate huge amounts of information on various web and mobile based social media platforms. Social media platforms have overtaken traditional media in facilitating social interactions on real time events. The ever increasing number of social media users has resulted in an increase in social media content. This content has proven to be helpful for decision making.  However, since there are no restrictions and limitations on the content posted on social media platforms, it has turned out that some of the posted content is invalid, inaccurate, potentially and intentionally harmful. This poses a need to develop solutions that can be used to detect false information and misinformation in social media text. Several studies have sought and continue to detect negative and inaccurate content shared on social media platforms. However, most of this research has focused on the English language and thus these applications can not be used in contexts that include low resourced languages like Luganda, a major local language in Uganda that is also commonly used on social media platforms.
+    &lt;/p&gt;
+
+
+&lt;p&gt;The focus of this research was on building a system for misinformation detection and sentiment analysis from social media text on Ugandan social media platforms. Our focus was mainly around social media content related to the current COVID-19 pandemic in Uganda. This was important to understand perceptions of Ugandas related to Uganda Government’s COVID-19 transmission mitigation strategies from social media data.  As a first step, we collected data related to COVID-19 from Facebook and Twitter using open source scraping tools. The data was analyzed and some of the key findings were that the text was in English, Luganda or a codemix of English and other local Ugandan languages like Luganda and Runyankole. For privacy reasons, the data was anonymized to remove any personal identification information.&lt;/p&gt;
+
+&lt;p&gt;To prepare the dataset for machine learning tasks, the data was annotated using the open source Doccano annotation tool. Prior to the data annotation task, annotation guidelines were defined which guided the annotation activity.&lt;/p&gt;
+
+&lt;p&gt;Each social media datapoint was given the following labels: &lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;Data Source: Facebook or Twitter &lt;/li&gt;
+    &lt;li&gt;Language: 
+        &lt;ul&gt;
+            &lt;li&gt;English- text data point is purely in English.&lt;/li&gt;
+            &lt;li&gt;Luganda - text data point is purely in Luganda.&lt;/li&gt;
+            &lt;li&gt;Codeswitched- text data point contains words in English and Luganda or in English and Runyankole.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;li&gt;Misinformation: To model for misinformation analysis; four labels were used:
+        &lt;ul&gt;
+            &lt;li&gt;Fake - statement is misleading.&lt;/li&gt;
+            &lt;li&gt;Not_Fake - statement is not misleading.&lt;/li&gt;
+            &lt;li&gt;Partially Fake - part of the statement is misleading.&lt;/li&gt;
+            &lt;li&gt;Others - scenarios where we couldn't prove whether the statement is false or not false.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;  
+    &lt;li&gt;Aspect: Topics on COVID-19 which included: COVID-19, Cases, Standard Operating Procedures (SOPs), Non-pharmaceutical Interventions (NPIs), Truck drivers, Hospitals, Vaccine, Elections, Treatment, Testing, COVID-19 Impact, Border, COVID-19 Relief, Presidential address, Death&lt;/li&gt;
+    &lt;li&gt;Sentiment: Tagged per Aspect with label of: Neutral, Positive and Negative. &lt;/li&gt;
+&lt;/ul&gt;
+
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/covid-19.png&quot; width=&quot;100% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+    &lt;p&gt;The figure above, shows an annotation of social media data in &lt;strong&gt;Luganda&lt;/strong&gt;  with the misinformation tagged as &lt;strong&gt;Not_Fake&lt;/strong&gt; and the aspect identified being &lt;strong&gt;Vaccine&lt;/strong&gt; with a &lt;strong&gt;Neutral&lt;/strong&gt; sentiment. &lt;/p&gt;
+
+    &lt;p&gt;After data annotation, we carried out an exploratory data analysis of the annotated data set that consisted of 11,000 text data points.The data obtained from Twitter contributed the highest percentage 51.4% compared to Facebook data with 48.6%. 93% of the annotated data points were in English while Luganda and Codemixed data points formed 5% and 1% respectively.&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/source-of-covid.png&quot; width=&quot;50% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/language-distribution.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+    &lt;p&gt;To gain more insights from the data, we drafted research questions to guide the data analysis.&lt;/p&gt;
+
+    &lt;p&gt;&lt;i&gt;Question 1: What is the spread of misinformation in the data obtained from Twitter compared to the data obtained from Facebook?&lt;/i&gt;&lt;/p&gt;
+
+    &lt;p&gt;To answer this question, we considered the misinformation label in the data.  Much as Twitter data was more than the Facebook data in terms of quantity, most of the data tagged with the &lt;strong&gt;'Fake'&lt;/strong&gt;, and &lt;strong&gt;'Partially Fake'&lt;/strong&gt; labels was the Facebook data. This can be attributed to the data that we obtained from Facebook that allowed us to include people’s comments to the Facebook posts compared to the Twitter data where we were restricted to only the posts made by the accounts scrapped. Moreover, Twitter has a limited tweet length of 280 characters compared to Facebook which means that while people make posts on Facebook, they are at liberty to write more which can turn out to be a source of misinformation. The demographic of Twitter and Facebook users is highly varied with more elites and corporate individuals on Twitter compared to Facebook. Corporates are more conscious about what they post and double check their posts or tweets.&lt;/p&gt;
+
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-source.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+    &lt;p&gt;&lt;i&gt;Question 2: What is the spread of misinformation in the English social media data compared to Luganda or code switched data?&lt;/i&gt;&lt;/p&gt;
+    
+    &lt;p&gt;A categorization based on language was made to compare the levels of misinformation associated with a particular language. &lt;/p&gt;
+
+    &lt;p&gt;From this analysis, it was observed that most of the 'Fake' and 'Not Fake' posts were written in &lt;strong&gt;English&lt;/strong&gt; while most of the posts in  &lt;strong&gt;Luganda&lt;/strong&gt; and &lt;strong&gt;codemixed&lt;/strong&gt; were tagged as 'Not_Fake' or 'Others'.&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-language.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+
+    &lt;p&gt;&lt;i&gt;Question 3: What is the spread of misinformation in the social media data obtained in 2020 compared to data obtained in 2021?&lt;/i&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;Generally, we observe that we had more posts with the misinformation labels:  &lt;strong&gt;'Fake'&lt;/strong&gt;, and &lt;strong&gt;'Partially Fake'&lt;/strong&gt; in 2021 compared to 2020. &lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-year.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+    &lt;p&gt;We also analyzed the misinformation data for 2021. From the data analysis, we observe that we had more posts labeled with misinformation in June and July 2021 compared to other months in the year. In June 2021, Uganda experienced its highest number of COVID-19 cases and deaths. This was attributed to the emergence of the Delta variant in the country.  Furthermore, all institutions of higher learning were closed  in June and a 42 days lockdown was announced for the transport and business sector. The lockdown was then lifted towards the end of July, however, schools remained closed. Considering all the events that were going on in the country at that time, we observed that there were many posts made on social media platforms and part of the data had misinformation labels.&lt;/p&gt;
+
+    &lt;p&gt;Sample data points for that period:&lt;/p&gt;
+
+    &lt;p&gt;&lt;i&gt;A: “Covid19 is now a fertile business in Uganda, continue getting the money you in government”. &lt;/i&gt;&lt;/p&gt;
+
+
+    &lt;p&gt;We observe that this post has misinformation on COVID-19. Our model was able to classify this post as “Fake” with a Negative sentiment. &lt;/p&gt;
+
+    &lt;p&gt;&lt;i&gt;B: “Okunoonyereza okukoleddwa ekitongole kulaze nti obwelaliikirivu bweyongedde mu bannayuganda olwembeera yekirwadde kya Covid-19 ekiyinza okwongera embeera yokwennyika ssinakindi endwadde zemitwe mu ggwanga”.&lt;/i&gt;&lt;/p&gt;
+
+    &lt;p&gt;We observe that the post was about a research conducted on the impact of COVID-19. Our model was able to classify this post as “Not_Fake” with a Negative sentiment.&lt;/p&gt;
+
+    &lt;p&gt;&lt;i&gt;Question 4: What is the correlation between the sentiments across different aspects in the social media dataset  ?&lt;/i&gt;&lt;/p&gt;
+
+    &lt;p&gt;During the COVID-19 pandemic, a number of topics drove conversations on social media platforms. These aspects ranged from the COVID-19 symptoms, COVID-19 restrictions by the government and their effects. The posts and tweets made about COVID-19, Non Pharmaceutical Interventions (NPIs) which included closure of schools, businesses and curfew, and COVID-19 cases had more negative sentiments. All these aspects had a negative impact on the people which justifies the results obtained. For example, some were about closure of people’s business, deaths of loved ones and family members.  Additionally aspects like COVID relief and treatment had positive sentiment this can be attributed to the food and cash relief issued by the government and the many recoveries witnessed from the COVID-19 patients.&lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/distribution-of-sentiments-per-aspect.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+
+
+    &lt;p&gt;In conclusion, we see the potential in analyzing social media data to understand people’s sentiments to COVID-19 and its mitigation strategies in the country. We also observe that there is potential for the use of social media data for the spread of misinformation and the need to build misinformation classification models based on machine learning. &lt;/p&gt;</content><author><name>Dr Joyce Nakatumba Nabende</name></author><summary type="html">The growth in the use of smartphones in Uganda has facilitated the increase in Internet usage and internet subscribers in the country. The Internet has provided a fertile ground to generate huge amounts of information on various web and mobile based social media platforms. Social media platforms have overtaken traditional media in facilitating social interactions on real time events. The ever increasing number of social media users has resulted in an increase in social media content. This content has proven to be helpful for decision making. However, since there are no restrictions and limitations on the content posted on social media platforms, it has turned out that some of the posted content is invalid, inaccurate, potentially and intentionally harmful. This poses a need to develop solutions that can be used to detect false information and misinformation in social media text. Several studies have sought and continue to detect negative and inaccurate content shared on social media platforms. However, most of this research has focused on the English language and thus these applications can not be used in contexts that include low resourced languages like Luganda, a major local language in Uganda that is also commonly used on social media platforms.</summary></entry><entry><title type="html">Deploying data in Covid-19 response - What worked?</title><link href="http://www.datascienceafrica.org/dsablog/2021/12/14/what-worked.html" rel="alternate" type="text/html" title="Deploying data in Covid-19 response - What worked?" /><published>2021-12-14T22:33:13+03:00</published><updated>2021-12-14T22:33:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2021/12/14/what-worked</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2021/12/14/what-worked.html">&lt;p&gt;“Covid-19 has been a catalyst to data innovation” is a phrase that has been thrown around very often by many (I know I have); but how far do real-world experiences support this statement? 
+    &lt;br&gt;Covid-19 intensified the urgent need for timely data and information for decision making, with data playing an important role in policies relating to disease surveillance, health and relief resources allocation and prioritization, cases and mortality prediction, amongst other areas. Drawing from real-world examples of the use of data science in the Covid-19 response, in this article, I review the strategies that made data use for Covid-19 a lot more possible than we have seen before. 
+    &lt;/p&gt;
+
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/what_worked/institutions.png&quot; width=&quot;25% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+    &lt;h4&gt;Institutions were poised to act and to work together.&lt;/h4&gt;
+        &lt;p&gt;The urgency of the pandemic meant organizations of all types were poised to take on new roles and work in new ways, creating a demand for data-enabled innovations. There was a clear and immediate need for reliable and timely data. 
+            Organizations like the Global Partnership for Sustainable Development Data &lt;a href=&quot;https://www.data4sdgs.org/news/covid-19-data-resilient-africa&quot; target=&quot;blank&quot;&gt;(GPSDD) played a huge role&lt;/a&gt; in initiating and establishing grounds for data partnerships and were a catalyst for many governments aided data-driven solutions. GPSDD approached several national statistical offices in Africa and convened various actors (from policy, data providers, analysts and others), to help get new projects  off the ground. Working across organisations in this way helped identify data needs and challenges that different national statistical offices were facing, exploring data access possibilities and bringing other partners on board for the analysis to happen. As a result, new coalitions were mobilized to help in identifying what data was available, what was missing, and who could fill the gaps. New partnerships were set up with relevant institutions, e.g. Centre for Disease Controls (CDC), to request access to data. The willingness with which national statistical offices and partners engaged with organizations like GPSDD to explore and uncover their data needs and challenges resulted in the analysis being possible faster than it would have been in a different case.
+            &lt;/p&gt;
+        &lt;p&gt;Other factors that made these collaborations and solutions successful included mechanisms for sharing data routinely rather than once, data harmonization, and the subsidized or no cost for Covid-19 dashboards (zero-rating data dashboards that can receive data from users).  
+            Case studies show that collaborations were more straightforward and faster where there were pre-existing relationships on the country level. Having already established engagements between various actors like local authorities, NGOs and other solution providers served as a good foundation for the analysis to occur quickly. 
+            &lt;/p&gt;
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/what_worked/data-formats.png&quot; width=&quot;25%&quot; style=&quot;padding:6px&quot;&gt; &lt;/div&gt;
+    &lt;h4&gt;Data science solution providers devised alternative ways to obtain hard to get data that was in any way programmable.&lt;/h4&gt;
+    &lt;p&gt;Access to data has been a challenge, especially in the early stages of the pandemic. In many cases, absence of Covid-19 health data and data incompleteness made data analytics hard. Nevertheless, data scientists devised ways to gather supplementary data, for example, through weekly social media surveys distributed for people to share information about their symptoms, whether they had taken a Covid-19 test or not, and the test results. In another case, it became popular that health ministries in many countries shared Covid-19 status reports on their websites and/or social media pages for the public in pdfs and static images. With these, data scientists could conduct the extra work of turning this data into analyzable formats. With such alternative approaches, data analytics was made possible. &lt;/p&gt;
+    &lt;p&gt;The reality is that most data is not curated and organized in ways that make it accessible or usable to decision-makers and other policy stakeholders. Practitioners in private and public sectors are not collecting and managing data with awareness and plan for broader retrieval or analysis beyond the initially intended task. For Covid-19 response, data scientists worked out ways around these issues to make evidence-based predictions, prioritization and overall decision making possible for the pandemic response.&lt;/p&gt;
+    
+    &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/what_worked/teams.png&quot; width=&quot;25%&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+   &lt;h4&gt;Teams were ready to work in real-time.&lt;/h4&gt;
+            &lt;p&gt;The Covid-19 emergency, like any emergency response, required swift actions that could not wait to follow the standard data science project life-cycle. Responders needed insights quickly, and everyone was under pressure to deliver, especially decision-makers. As a result, responders sought interventions that could be rapidly implemented without compromising on the status of the data analytics. In this case, teams had to do the “intensive human tasks” (for example, manually making sure data is relevant and accurate instead of creating and training models that might require more data and time) to ensure getting results in real-time.&lt;/p&gt;
+            &lt;p&gt;In addition, teams quickly adapted to different reporting structures as long as they were accessible to decision-makers. 
+                In some cases, insights never made it to fancy dashboards, but they reached decision-makers quickly. In other cases, already 
+                existing platforms were repurposed to fit Covid-19 needs. A few examples here are platforms like &lt;a href=&quot;https://dhis2.org/category/covid-success-stories/&quot; target=&quot;blank&quot;&gt; DHIS2&lt;/a&gt; that developed 
+                ready-to-install digital data packages to support Covid-19 surveillance &amp; response based on WHO guidelines. 
+                Another example is &lt;a href=&quot;https://kenyacovid19.ushahidi.io/views/map&quot; target=&quot;blank&quot;&gt; Ushahidi&lt;/a&gt;, which developed a dashboard component tracking cases of Covid-19 and other resources, supplies and services, and news. Ushahidi also set up internet hotspots to host information centres that helped disseminate educational and health information (videos, pdfs and audios) to help people navigate challenges caused by the pandemic.
+                &lt;/p&gt;
+            &lt;p&gt;Data collected by private practitioners for their day to day operations played a vital role in enabling analytics that accessed 
+                the social and economic impact of Covid-19. For example, mobile phone data for mobility tracking was widely reused with examples in 
+                &lt;a href=&quot;https://www.flowminder.org/resources/publications/analysis-of-call-detail-records-to-inform-the-covid-19-response-in-ghana-opportunities-and-challenges&quot; target=&quot;blank&quot;&gt; Ghana&lt;/a&gt;, 
+                &lt;a href=&quot;https://www.flowminder.org/resources/publications/covid-19-supporting-the-government-of-sierra-leone-with-mobility-data&quot; target=&quot;blank&quot;&gt; Sierra Leone&lt;/a&gt;, 
+                &lt;a href=&quot;https://www.flowminder.org/resources/publications/covid-19-democratic-republic-of-the-congo-drc-report-may-2020-initial-insights-into-the-effect-of-mobility-restrictions-using-anonymised-and-aggregated-mobile-phone-data&quot; target=&quot;blank&quot;&gt;DRC&lt;/a&gt;, 
+                &lt;a href=&quot;https://blogs.worldbank.org/developmenttalk/using-agent-based-modeling-and-telecom-data-inform-covid-19-response&quot; target=&quot;blank&quot;&gt;Gambia&lt;/a&gt;, 
+                    and &lt;a href=&quot;https://www.flowminder.org/resources/publications/covid-19-supporting-the-government-of-namibia-with-mobility-data&quot; target=&quot;blank&quot; &gt;Namibia&lt;/a&gt;.
+                    Another example of private sector data reuse was &lt;a href=&quot;https://www.yoco.com/za/blog/covid-19-recovery-monitor/&quot; target=&quot;blank&quot;&gt;Yoco Financial data&lt;/a&gt; that the company repurposed to assess the effect of Covid-19 on small businesses turnover. &lt;/p&gt;
+            &lt;p&gt;These examples have illustrated that what is needed in a time of crisis is not only new technologies and platforms but already working solutions and leveraging existing links (collaborations). An additional key to this success was the speed of executions anticipating and dealing with changing needs as stakeholders got on board with data-driven solutions.&lt;/p&gt;
+
+        &lt;div style=&quot;text-align:center&quot;&gt; &lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/what_worked/agenda.png&quot; width=&quot;25%&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+    &lt;h4&gt;The agenda on data use was a priority for everyone.&lt;/h4&gt;
+    &lt;p&gt;The &lt;a href=&quot;https://www.un.org/sites/un2.un.org/files/joint_statement_on_data_protection_and_privacy_in_covid-19_response.pdf&quot;&gt;joint UN statement&lt;/a&gt; on data protection and privacy in the Covid-19 response statement states that the collection, use, sharing and further processing of data can help limit the spread of the virus and aid in accelerating the recovery, primarily through digital contact tracing. 
+        There has been evidence of an increased enthusiasm with which people tried to mobilize around new data sources or accessing existing information which has portrayed the level of value attached to the use of data for crisis response. One way that the agenda on data was pushed was by forming national Covid-19 task forces on data which mobilized relevant stakeholders and national leaders to unfasten critical roadblocks to data sharing and access to coordinate and advance the crisis response. The galvanized interest around data also made several analyses possible faster than it would have been in a different case.
+        &lt;/p&gt;
+        
+        &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/what_worked/what_worked01.png&quot; width=&quot;70%&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+&lt;p&gt;All the above worked even though in Africa, we are faced with a data ecosystem that is still maturing, and that hasn’t yet worked through a lot of the issues around data governance and use. These include: how to navigate the vast regulatory burden that makes the subject of data access and sharing sensitive, how to operate within unclear legal frameworks (what should be public and not, which leaves solutions hidden from people that would benefit from them) and how to ensure data is privacy-safe but still useful for the analysis. &lt;/p&gt;
+    &lt;p&gt;To address these issues there is a need for various interventions, including; building capacity to develop data-enabled solutions and to address data needs, addressing the gaps in data sharing laws, mechanisms and policies, and creating institutional and technology infrastructures to unlock access and enable effective data sharing and policies across public institutions. While there is noticeable progress caused by the united stand that has been towards responding to Covid-19, there remains work to do if Africa is to harness the benefits of data in policy responses.&lt;/p&gt;
+    &lt;p&gt;So, it’s true, the novelty and urgency of the pandemic brought about openness and a learning appetite (about new approaches, interest in the 
+        new ways of doing things which fostered data innovations), and there is a lot that we can learn from the various
+         &lt;a href=&quot;https://www.datascienceafrica.org/dsablog/2021/08/26/data-driven-covid-19-solutions-in-africa.html&quot; target=&quot;blank&quot;&gt;examples done across 
+        Africa&lt;/a&gt; to improve data innovation for social good, beyond Covid-19. &lt;/p&gt;    
+    &lt;p&gt;However, if we are truly going to say that covid-19 has been a catalyst for data-enabled innovation, we need to ask:
+        How do these lessons tie into the policy requirements of data access and use? This is the next question we are answering through &lt;a href=&quot;https://mamutorine.github.io/about/&quot; target=&quot;blank&quot;&gt;this project&lt;/a&gt;. 
+        &lt;/p&gt;
+&lt;p&gt;The findings in this article are a result of a conversation from real-world experiences shared during the “Data sharing for Covid-19 response: 
+    lessons from African experiences for the development of data policy” (20th October 2021) focus workshop convened under the 
+    &lt;a href=&quot;http://www.datascienceafrica.org/dsa-visiting-fellowship/&quot; target=&quot;blank&quot;&gt;DSA visiting fellowship program&lt;/a&gt;, 
+    to support the project &lt;a href=&quot;https://mamutorine.github.io/about/&quot; target=&quot;blank&quot;&gt;“Increasing Data Sharing from Africa’s Covid-19 Response”&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;em&gt;Great thanks go to everyone who participated in the workshop and the Data Science Africa team for the support and &lt;a href=&quot;https://www.csap.cam.ac.uk/network/jessica-montgomery/&quot;&gt;Jessica Montgomery&lt;/a&gt; and &lt;a href=&quot;https://inverseprobability.com/&quot;&gt;Prof. Neil Lawrence&lt;/a&gt; for the overall guidance on this project.&lt;/em&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;em&gt; Reach out to: &lt;a href =&quot;mailto:amutorine@gmail.com&quot; target=&quot;blank&quot;&gt;Morine Amutorine&lt;/a&gt;&lt;/em&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;!-- &lt;h4&gt;Where are these solutions located?&lt;/h4&gt;
+&lt;div&gt;
+&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/map3.png&quot; align=&quot;left&quot; width=&quot;60%&quot; style=&quot;padding:6px&quot;&gt; --&gt;
+&lt;!-- &lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)&lt;/span&gt; --&gt;
+
+&lt;!-- &lt;p&gt;In April (2021), we set out to collect data about data driven Covid-19 solutions in Africa, with the aim of analysing various characteristics of the projects and  developing a data sharing framework for social good beyond Covid-19 in the African context. We wanted to explore the datasets and data access strategies used, the skills and expertise needed for effective collaborations, technical requirements, and barriers to effective data sharing. Our objective for this review was to learn more about the challenges and opportunities encountered on various projects. We hope to establish where projects face common challenges, where there is consensus about the need for policy intervention, and what type of policy intervention could help. &lt;/p&gt; --&gt;
+
+
+&lt;!-- &lt;p&gt;To date, we have collected about 65 data driven Covid-19 solutions and initiatives in Africa from both &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdLSRSxjIVZeXqVLcWbtv1t_IqzXP6gXbhFCIfzeIulDY6DhA/viewform&quot;&gt;the survey&lt;/a&gt; and targeted online search. This write up is an overview of our findings and a summary of the ongoing and future work towards developing a data sharing framework and contributing to &lt;a href=&quot;http://www.datascienceafrica.org/dsa-visiting-fellowship/&quot;&gt;Data Science Africa’s efforts to support data policies&lt;/a&gt; in Africa.&lt;/p&gt;
+&lt;/div&gt; --&gt;</content><author><name>Morine Amutorine</name></author><summary type="html">“Covid-19 has been a catalyst to data innovation” is a phrase that has been thrown around very often by many (I know I have); but how far do real-world experiences support this statement? Covid-19 intensified the urgent need for timely data and information for decision making, with data playing an important role in policies relating to disease surveillance, health and relief resources allocation and prioritization, cases and mortality prediction, amongst other areas. Drawing from real-world examples of the use of data science in the Covid-19 response, in this article, I review the strategies that made data use for Covid-19 a lot more possible than we have seen before.</summary></entry><entry><title type="html">Increasing Data Sharing from Africa’s Covid-19 Response</title><link href="http://www.datascienceafrica.org/dsablog/2021/08/26/data-driven-covid-19-solutions-in-africa.html" rel="alternate" type="text/html" title="Increasing Data Sharing from Africa’s Covid-19 Response" /><published>2021-08-26T17:45:13+03:00</published><updated>2021-08-26T17:45:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2021/08/26/data-driven-covid-19-solutions-in-africa</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2021/08/26/data-driven-covid-19-solutions-in-africa.html">&lt;p&gt;Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 pandemic. These solutions aim to:&lt;/p&gt;
 
 &lt;ul&gt;
     &lt;li&gt;Increase the effectiveness &lt;b&gt;of emergency response&lt;/b&gt; (like monitoring the extent of the disease spread among populations);&lt;/li&gt;
@@ -10,654 +165,68 @@
 
 &lt;p&gt;By reviewing the landscape of data science-enabled Covid-19 response projects in Africa, this project aims to identify policy interventions that can enable more effective data sharing in future.&lt;/p&gt;
 
-&lt;h3&gt;Where are these solutions located?&lt;/h3&gt;
+&lt;h4&gt;Where are these solutions located?&lt;/h4&gt;
+&lt;div&gt;
+&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/map3.png&quot; align=&quot;left&quot; width=&quot;60%&quot; style=&quot;padding:6px&quot;&gt;
+&lt;!-- &lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)&lt;/span&gt; --&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&amp;publish=yes&amp;:display_count=n&amp;:origin=viz_share_link&quot;&gt;https://public.tableau.com/views/DDCSC/Dashboard1?:language=en-US&amp;publish=yes&amp;:display_count=n&amp;:origin=viz_share_link&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class='tableauPlaceholder' id='viz1628845703903' style='position: relative'&gt;&lt;noscript&gt;&lt;a href='#'&gt;&lt;img alt='Dashboard 1 ' src='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;DD&amp;#47;DDCSC&amp;#47;Dashboard1&amp;#47;1_rss.png' style='border: none' /&gt;&lt;/a&gt;&lt;/noscript&gt;&lt;object class='tableauViz'  style='display:none;'&gt;&lt;param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /&gt; &lt;param name='embed_code_version' value='3' /&gt; &lt;param name='site_root' value='' /&gt;&lt;param name='name' value='DDCSC&amp;#47;Dashboard1' /&gt;&lt;param name='tabs' value='no' /&gt;&lt;param name='toolbar' value='yes' /&gt;&lt;param name='static_image' value='https:&amp;#47;&amp;#47;public.tableau.com&amp;#47;static&amp;#47;images&amp;#47;DD&amp;#47;DDCSC&amp;#47;Dashboard1&amp;#47;1.png' /&gt; &lt;param name='animate_transition' value='yes' /&gt;&lt;param name='display_static_image' value='yes' /&gt;&lt;param name='display_spinner' value='yes' /&gt;&lt;param name='display_overlay' value='yes' /&gt;&lt;param name='display_count' value='yes' /&gt;&lt;param name='language' value='en-US' /&gt;&lt;/object&gt;&lt;/div&gt;                &lt;script type='text/javascript'&gt;                    var divElement = document.getElementById('viz1628845703903');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth &gt; 800 ) { vizElement.style.width='100%';vizElement.style.height='851px';} else if ( divElement.offsetWidth &gt; 500 ) { vizElement.style.minWidth='420px';vizElement.style.maxWidth='650px';vizElement.style.width='100%';vizElement.style.minHeight='587px';vizElement.style.maxHeight='887px';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                &lt;/script&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: shows No of data driven Covid-19 solutions collected by country, (which is not a representation of all country solutions due to data collection limitations)&lt;/span&gt;
-
-
-
-
-&lt;p&gt;In April(2021), we set out to collect data about data driven Covid-19 solutions in Africa, with the aim of analysing various characteristics of the projects and  developing a data sharing framework for social good beyond Covid-19 in the African context. We wanted to explore the datasets and data access strategies used, the skills and expertise needed for effective collaborations, technical requirements, and barriers to effective data sharing. Our objective for this review was to learn more about the challenges and opportunities encountered on various projects. We hope to establish where projects face common challenges, where there is consensus about the need for policy intervention, and what type of policy intervention could help. &lt;/p&gt;
+&lt;p&gt;In April (2021), we set out to collect data about data driven Covid-19 solutions in Africa, with the aim of analysing various characteristics of the projects and  developing a data sharing framework for social good beyond Covid-19 in the African context. We wanted to explore the datasets and data access strategies used, the skills and expertise needed for effective collaborations, technical requirements, and barriers to effective data sharing. Our objective for this review was to learn more about the challenges and opportunities encountered on various projects. We hope to establish where projects face common challenges, where there is consensus about the need for policy intervention, and what type of policy intervention could help. &lt;/p&gt;
 
 
 &lt;p&gt;To date, we have collected about 65 data driven Covid-19 solutions and initiatives in Africa from both &lt;a href=&quot;https://docs.google.com/forms/d/e/1FAIpQLSdLSRSxjIVZeXqVLcWbtv1t_IqzXP6gXbhFCIfzeIulDY6DhA/viewform&quot;&gt;the survey&lt;/a&gt; and targeted online search. This write up is an overview of our findings and a summary of the ongoing and future work towards developing a data sharing framework and contributing to &lt;a href=&quot;http://www.datascienceafrica.org/dsa-visiting-fellowship/&quot;&gt;Data Science Africa’s efforts to support data policies&lt;/a&gt; in Africa.&lt;/p&gt;
-
-&lt;h3&gt;What do we know so far?&lt;/h3&gt;
-
-
+&lt;/div&gt;
+&lt;!-- &lt;h4&gt;What do we know so far?&lt;/h4&gt;
 
 
-&lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/highcharts-more.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/modules/exporting.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/modules/accessibility.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.&lt;/p&gt; --&gt;
+&lt;img class=&quot;img-fluid&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/datas2t.png&quot;&gt;
+&lt;!--     &lt;center&gt;
+       &lt;img class=&quot;img-fluid&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/bars.png&quot;&gt;
 
-&lt;figure class=&quot;highcharts-figure&quot;&gt;
-    &lt;div id=&quot;packedBubble&quot;&gt;&lt;/div&gt;
-    
-&lt;/figure&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-Highcharts.chart('packedBubble', {
-    chart: {
-        type: 'packedbubble',
-        height: '100%'
-    },
-    title: {
-        text: ''
-    },
-    tooltip: {
-        useHTML: true,
-        pointFormat: '&lt;b&gt;{point.name}:&lt;/b&gt; {point.value}'
-    },
-                    colors: [
-                    '#5D6263',
-                    '#CF5C42',
-                    '#00447C',
-                    '#00AEEF', 
-                    '#F4D5E3', 
-                    '#487D7D', 
-                    '#ACE8E6', 
-                    '#E7E247'
-                    ],
-    plotOptions: {
-        packedbubble: {
-            minSize: '30%',
-            maxSize: '120%',
-            zMin: 0,
-            zMax: 30,
-            layoutAlgorithm: {
-                splitSeries: false,
-                gravitationalConstant: 0.02
-            },
-            dataLabels: {
-                enabled: true,
-                format: '{point.name}: &lt;b&gt;{point.value}&lt;/b&gt;',
-                filter: {
-                    property: 'y',
-                    operator: '&gt;',
-                    value: 5
-                },
-                style: {
-                    color: 'black',
-                    textOutline: 'none',
-                    fontWeight: 'normal'
-                }
-            }
-        }
-    },
-    series: [ {
-        name: 'No of Solutions',
-        data: [{
-            name: &quot;Replicable Data Driven Solutions&quot;,
-            value: 6
-        },
-        {
-            name: &quot;Data Driven Research Papers&quot;,
-            value: 9
-        },
-        {
-            name: &quot;Other Data Driven Covid-19 Resources&lt;br&gt;(webiners, articles, AI enabled solutions etc)&quot;,
-            value: 10
-        },
-        {
-            name: &quot;Covid-19 Data Resources&quot;,
-            value: 14
-        }]
-    }]
-});
-
-&lt;/script&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Figure 2: shows The data driven Covid-19 solutions analysed so far cut across a variety of data types and other general initiatives as shown in the following figures.  &lt;/span&gt;
+        &lt;img style=&quot;height: 500px;&quot;  class=&quot;img-fluid&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/circles.png&quot;&gt;
+   
+   &lt;/center&gt;      --&gt;
+&lt;!-- &lt;span class=&quot;caption text-muted&quot;&gt;Figure 2: shows a Summary of data types used (as of the data collected)&lt;/span&gt; --&gt;
 
 
 
-
-
-&lt;figure class=&quot;highcharts-figure&quot;&gt;
-    &lt;div id=&quot;container1&quot;&gt;&lt;/div&gt;
-    
-&lt;/figure&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-Highcharts.chart('container1', {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Summary of data types used (as of the data collected)'
-    },
-    subtitle: {
-        text: ''
-    },
-    xAxis: {
-        categories: ['Mobile Phone Data', 'Official Health Data &amp;amp; Covid Statistics', 'Social Media, Search &amp;amp; News Data', 'Satellite Imagery', 'Survey &amp;amp; Other Data', 'Financial Data', 'X-ray Imagery'],
-        title: {
-            text: null
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: '#',
-            align: 'high'
-        },
-        labels: {
-            overflow: 'justify'
-        }
-    },
-    tooltip: {
-        valueSuffix: ''
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{
-        name: '#',
-        data: [10, 6, 4, 2, 2, 1, 1]
-    }]
-});
-&lt;/script&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Figure 3: shows a Summary of data types used (as of the data collected)&lt;/span&gt;
+&lt;p&gt;We have tried to explore the status (i.e., level of solution uptake in the real world) of the projects in our database by categorizing them as; pilot not ready to deploy, pilot ready to deploy and in use. This kind of analysis will help us draw some insights into solution uptake and what roles various factors like data used, nature of collaborations, stakeholders involved and more, play in solution uptake.  Extracting any patterns in projects that get used and those that stay at pilot level (or research level) can provide insights that can help inform future approaches to projects, to increase their chances of being adopted in the real world. &lt;/p&gt;
 
 
 
-&lt;p&gt;We have tried to explore the status (i.e., level of solution uptake in the real world) of the projects in our database by categorizing them as; &lt;b&gt;pilot not ready to deploy, pilot ready to deploy&lt;/b&gt; and &lt;b&gt;in use&lt;/b&gt;. This kind of analysis will help us draw some insights into solution uptake and what roles various factors like data used, nature of collaborations, stakeholders involved and more, play in solution uptake.  Extracting any patterns in projects that get used and those that stay at pilot level (or research level) can provide insights that can help inform future approaches to projects, to increase their chances of being adopted in the real world. &lt;/p&gt;
-
-
-
-&lt;h3&gt;What’s in progress?&lt;/h3&gt;
+&lt;h4&gt;What’s in progress?&lt;/h4&gt;
 &lt;p&gt;We are currently conducting a case-by-case analysis of the Covid-19 solutions to establish the Africa situation in regards to data sharing for social good and also identify focal points for targeted engagements.  Survey responses so far have highlighted the following key areas for action:&lt;/p&gt;
 
-&lt;h5&gt;-&gt; Data:&lt;/h5&gt;
-&lt;p&gt;A variety of different data types can be used in Covid-19 response, and different data types will pose different analytical challenges. Data scientists are grappling with issues of accessibility and usability, with different levels of data quality or data formats, and with questions about storage and sharing formats, and replicable frameworks available to process and analyze various data types&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Data:&lt;/b&gt; A variety of different data types can be used in Covid-19 response, and different data types will pose different analytical challenges. Data scientists are grappling with issues of accessibility and usability, with different levels of data quality or data formats, and with questions about storage and sharing formats, and replicable frameworks available to process and analyze various data types&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Collaborations:&lt;/b&gt; For an application to work well once deployed, it must be designed with user needs in mind. Survey respondents have been grappling with understanding which stakeholders have what requirements, and how best to engage with different potential user groups, defining the roles that different actors play across a project’s life, uptake, and impact. &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Skills:&lt;/b&gt; Effective deployment of data science applications requires teams with diverse skillsets that can engage different stakeholders. Further work is now needed to understand what capabilities are needed in a data science team, and how to access this multidisciplinary expertise.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Data stewardship:&lt;/b&gt; In addition to issues of data access, a variety of data stewardship issues must be addressed to ensure trustworthy use of data. This project will seek to understand the challenges that arise across the data pipeline from creation, ownership, accessibility, and sharing for data analysis and use. This includes consideration of topics such as privacy, security, and the cultural norms that govern these practices and come up with checklist toolkits to aid future work.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Policy:&lt;/b&gt; Drawing from these experiences, this project will seek to establish how the challenges tie into the policy requirements of data access and use, and propose guidelines for handling requirements, barriers, opportunities, gaps, risks, and approaches to data sharing.&lt;/p&gt;
 
 
-&lt;h5&gt;-&gt; Collaborations:&lt;/h5&gt;
-&lt;p&gt;For an application to work well once deployed, it must be designed with user needs in mind. Survey respondents have been grappling with understanding which stakeholders have what requirements, and how best to engage with different potential user groups, defining the roles that different actors play across a project’s life, uptake, and impact. &lt;/p&gt;
+&lt;h4&gt;What questions about Africa’s Covid-19 response, need answering to increase data sharing for social good beyond Covid-19?&lt;/h4&gt;
 
+&lt;ul&gt;
+    &lt;li&gt;What data access strategies have been successful during and can be adopted from the Covid-19 response? How could these be adopted in the longer-term?&lt;/li&gt;
+    &lt;li&gt;
+    What intervention processes and procedures have proved productive in forming data collaborations for Covid-19 response? 
+    How have projects brought users or other stakeholders into project development?
+    &lt;/li&gt;
+    &lt;li&gt;What roles do skills and expertise play in building effective data collaborations?&lt;/li&gt;
+    &lt;li&gt;What issues of data governance and data stewardship were encountered during the Covid-19 response? What privacy obligations, technical requirements and social and cultural barriers affect data sharing? &lt;/li&gt;
+    &lt;li&gt;How can we build capabilities in the long-term?&lt;/li&gt;
+    &lt;li&gt;What policy interventions would help address or lessen the impact of the current barriers to the use of data science in policy?&lt;/li&gt;
+    &lt;li&gt;Why are some solutions more widespread and others not?&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;h5&gt;-&gt; Skills:&lt;/h5&gt;
-&lt;p&gt;Effective deployment of data science applications requires teams with diverse skillsets that can engage different stakeholders. Further work is now needed to understand what capabilities are needed in a data science team, and how to access this multidisciplinary expertise.&lt;/p&gt;
-
-&lt;h5&gt;-&gt; Data stewardship:&lt;/h5&gt;
-&lt;p&gt;In addition to issues of data access, a variety of data stewardship issues must be addressed to ensure trustworthy use of data. This project will seek to understand the challenges that arise across the data pipeline from creation, ownership, accessibility, and sharing for data analysis and use. This includes consideration of topics such as privacy, security, and the cultural norms that govern these practices and come up with checklist toolkits to aid future work.&lt;/p&gt;
-
-&lt;h5&gt;-&gt; Policy:&lt;/h5&gt;
-&lt;p&gt;Drawing from these experiences, this project will seek to establish how the challenges tie into the policy requirements of data access and use, and propose guidelines for handling requirements, barriers, opportunities, gaps, risks, and approaches to data sharing.&lt;/p&gt;
-
-
-&lt;h3&gt;What questions need to be answered?&lt;/h3&gt;
-
-&lt;p&gt;What data access strategies have been successful during and can be adopted from the Covid-19 response? How could these be adopted in the longer-term?&lt;/p&gt;
-
-&lt;p&gt;What intervention processes and procedures have proved productive in forming data collaborations for Covid-19 response? How have projects brought users or other stakeholders into project development?&lt;/p&gt;
-
-&lt;p&gt;What issues of data governance and data stewardship were encountered during the Covid-19 response? What privacy obligations, technical requirements and social and cultural barriers affect data sharing? &lt;/p&gt;
-
-&lt;p&gt;What roles do skills and expertise play in building effective data collaborations?&lt;/p&gt;
-
-&lt;p&gt;How can we build capabilities in the long-term?&lt;/p&gt;
-
-&lt;p&gt;What policy interventions would help address or lessen the impact of the current barriers to the use of data science in policy?&lt;/p&gt;
-
-&lt;p&gt;Why are some solutions more widespread and others not?&lt;/p&gt;
-
-
-&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;h4&gt;Conclusion&lt;/h4&gt;
 
 &lt;p&gt;The study of the above mentioned factors (data, collaborations, skills, stewardship and policies) plus answering these questions will help us develop an operational context that fosters data sharing, and derive guidelines on &lt;b&gt;best practices&lt;/b&gt; that can be adapted and replicated, &lt;b&gt;lessons&lt;/b&gt; from what did not work and &lt;b&gt;recommendations&lt;/b&gt; from what has worked in the Covid-19 response. We will then map out practical actions that can create data ecosystems that foster data sharing, increasing the use of data for innovation and social good. &lt;/p&gt;
 
-&lt;span class=&quot;caption text-muted&quot;&gt;Acknowledgements for data collection go to: &lt;b&gt;Wuraola Oyewusi, Ayomide Owoyemi, Ernest Mwebaze, Jessica Oyugi, Aurelle Tchagna Kouanou, Tamaro Green, Ezekiel Adebayo Ogundepo and Vasileios Lampos.&lt;/b&gt;&lt;/span&gt;</content><author><name>Morine Amutorine &amp; Jessica Montgomery</name></author><summary type="html">Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 Pandemic. These solutions aim to:</summary></entry><entry><title type="html">Data Science Africa (DSA) Uganda Network</title><link href="/dsablog/2021/06/25/data-science-africa-uganda-network.html" rel="alternate" type="text/html" title="Data Science Africa (DSA) Uganda Network" /><published>2021-06-25T17:45:13+03:00</published><updated>2021-06-25T17:45:13+03:00</updated><id>/dsablog/2021/06/25/data-science-africa-uganda-network</id><content type="html" xml:base="/dsablog/2021/06/25/data-science-africa-uganda-network.html">&lt;p&gt;Two members of the Lab are on the interim coordination team for setting up DSA Uganda network whose mission is an all-inclusive network of data scientists, enthusiasts, and organisations inspired to grow data science skills and their usage to contribute to Uganda's development aspirations, as started in the National Development Plan III (NDPIII). The network also has clear objectives and proposed activities  for details visit the  &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/&quot;&gt;website: http://www.datascienceafrica.org/dsaUganda/&lt;/a&gt;
-The network has so far organised three pre-launch events the details of follow in the next part of his annex.&lt;/p&gt;
-
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Events&lt;/h2&gt;
-&lt;h3&gt;1st DSA Uganda Pre launch  Event&lt;/h3&gt;
-&lt;h4 class=&quot;subheading&quot;&gt;Date: April 30, 2021&lt;/h4&gt;
-
-&lt;p&gt;Event link: &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/events/pre-launch.html&quot;&gt;http://www.datascienceafrica.org/dsaUganda/events/pre-launch.html&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;The first pre launch event was organised around the following objectives:&lt;/p&gt;
-&lt;ul&gt;
-    &lt;li&gt;To bring together partners working in the data science space within the country (Academia, UN, civil society, private sector (banking, insurance, fintech, utility, social security), government [local, and central];&lt;/li&gt;
-    &lt;li&gt;To showcase local case studies and potential of data science and increase its awareness;&lt;/li&gt;
-    &lt;li&gt;To increase interest and ownership in data science among stakeholders;&lt;/li&gt;
-    &lt;li&gt;To Communicate the agenda of the local chapter so that the people can be aware of what is available on offer and simulate discussion on the partnership going forward.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;291 individuals applied for the event, categorised in the following areas.&lt;/p&gt;
-
-&lt;p&gt;District distribution:&lt;/p&gt;
-
-&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Kampala&lt;/td&gt;
-        &lt;td&gt;163&lt;/td&gt;
-        &lt;td&gt;Gomba&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Wakiso&lt;/td&gt;
-        &lt;td&gt;25&lt;/td&gt;
-        &lt;td&gt;Luwero&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mbarara&lt;/td&gt;
-        &lt;td&gt;14&lt;/td&gt;
-        &lt;td&gt;Kibaale&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Tororo&lt;/td&gt;
-        &lt;td&gt;7&lt;/td&gt;
-        &lt;td&gt;Pader&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Lira&lt;/td&gt;
-        &lt;td&gt;7&lt;/td&gt;
-        &lt;td&gt;Abim&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Busia&lt;/td&gt;
-        &lt;td&gt;4&lt;/td&gt;
-        &lt;td&gt;Masaka&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Jinja&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;Lyantonde&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mukono&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;Moyo&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Arua&lt;/td&gt;
-        &lt;td&gt;3&lt;/td&gt;
-        &lt;td&gt;Ntungamo&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Apac&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;Adjumani&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Kyenjojo&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;Kotido&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Buikwe&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;Kwania&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Gulu&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;Yumbe&lt;/td&gt;
-        &lt;td&gt;1&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mpigi&lt;/td&gt;
-        &lt;td&gt;2&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Contributors to the first pre launch event were; &lt;b&gt;Data Science Africa Org,  National Planning Authority (NPA), Sunbird AI, Makerere AI Lab, Busitema AI Lab, AirQo, Umeme, MTN Uganda and Stanbic Bank.&lt;/b&gt;&lt;/p&gt;
-
-
-
-&lt;h3&gt;2nd  DSA Uganda Pre launch  Event&lt;/h3&gt;
-&lt;h4&gt;Date: May 28, 2021&lt;/h4&gt;
-
-&lt;p&gt;Event link: &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/events/pre-launch-2.html&quot;&gt;http://www.datascienceafrica.org/dsaUganda/events/pre-launch-2.html&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;The second pre launch event was themed around opportunities in, for and around data science in Uganda and attracted presentations from government institutions, policy makers, industry experts, research institutes, academic institutions, entrepreneurs, among others giving  examples of opportunities for and around data science in Uganda. 346 individuals applied for the event, with applicants from 5 new districts of &lt;b&gt;Mbale, Kayunga, Hoima, Soroti and Kween.&lt;/b&gt; &lt;/p&gt;
-
-&lt;p&gt;Contributors to the second pre launch event were; &lt;b&gt;Ministry of ICT Uganda, NITAU, ClinicPesa, Pollicy, Innovation Village Uganda, FINCA Bank and Data Science Africa Network.&lt;/b&gt;&lt;/p&gt;
-
-&lt;h3&gt;3rd  DSA Uganda Pre launch  Event&lt;/h3&gt;
-&lt;h4&gt;Date: June 25, 2021&lt;/h4&gt;
-
-&lt;p&gt;Event link: &lt;a href=&quot;http://www.datascienceafrica.org/dsaUganda/events/pre-launch-3.html&quot;&gt;http://www.datascienceafrica.org/dsaUganda/events/pre-launch-3.html&lt;/a&gt; &lt;/p&gt;
-
-&lt;p&gt;The third pre launch event was themed around Showcasing data science research and projects in Universities. The event was centered around student research and this is basically to encourage and foster the growth of AI research at universities through networkings and collaborations, mentorships and supervisions from experts in industry or even other universities.&lt;/p&gt;
-
-&lt;p&gt;Contributors to the second pre launch event were from six Universities, 5 Ugandan including;&lt;b&gt; Makerere University; Uganda Technical And Management University; Gulu University; Mbarara University of Science and Technology; and Busitema University&lt;/b&gt;, then &lt;b&gt;Rhodas University&lt;/b&gt; in South Africa. The presenters included two University lecturers and six students.&lt;/p&gt;
-
-
-&lt;p&gt;To date, data science Africa Uganda chapter has attracted participation from 388 students, researchers and professionals that make up the local community of the Uganda Network.&lt;/p&gt;
-
-&lt;p&gt;The map in Figure 2, shows participants residential/work distributions among the 15 sub regions of Uganda. Because of the 42 day lock down the launch that was due in July is now postponed to a later month, but pre-launch events organised by the regions will start this month, with the Northern region ( 4 subregions of West Nile, Achioli, Lango and Karamoja) organising this month.&lt;/p&gt;
-
-
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Statistics from 1st and 2nd Pre-Launch Events&lt;/h2&gt;
-
-&lt;script src=&quot;https://code.highcharts.com/highcharts.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/modules/exporting.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/modules/export-data.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;https://code.highcharts.com/modules/accessibility.js&quot;&gt;&lt;/script&gt;
-
-&lt;figure class=&quot;highcharts-figure&quot;&gt;
-    &lt;div id=&quot;container&quot;&gt;&lt;/div&gt;
-    &lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: Participant distribution from 1st and 2nd Pre-Launch Event &lt;/span&gt;
-&lt;/figure&gt;
-&lt;script&gt;
-Highcharts.chart('container', {
-    chart: {
-        type: 'bar'
-    },
-    title: {
-        text: 'Participant Distribution by Stakeholder'
-    },
-    xAxis: {
-        categories: ['Academia', 'Private Sector', 'Others', 'NGO', 'Goverment-Central', 'UN', 'Goverment-Local'],
-        title: {
-            text: 'Institutions'
-        }
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Participants',
-            align: 'high'
-        },
-        labels: {
-            overflow: 'justify'
-        }
-    },
-    plotOptions: {
-        bar: {
-            dataLabels: {
-                enabled: true
-            }
-        }
-    },
-    legend: {
-        layout: 'vertical',
-        align: 'right',
-        verticalAlign: 'top',
-        x: -40,
-        y: 80,
-        floating: true,
-        borderWidth: 1,
-        backgroundColor:
-            Highcharts.defaultOptions.legend.backgroundColor || '#FFFFFF',
-        shadow: true
-    },
-    credits: {
-        enabled: false
-    },
-    series: [{
-        name: '#Participants',
-        data: [140, 80, 30, 30, 21, 16, 14]
-    }, ]
-});
-&lt;/script&gt;
-
-
-
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/dsablog/img/posts/Participant-distribution-by-stakeholder.jpg&quot; alt=&quot;Demo Image&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Figure 2: Map showing the distribution of participants in the three DSA Uganda pre-launch events&lt;/span&gt;
-
-
-
-&lt;p&gt;List of 28 Universities and Higher Institutions have so far participated  in DSA Uganda Network events.&lt;/p&gt;
-
-&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Africa Leadership Institute, Uganda&lt;/td&gt;
-        &lt;td&gt;Aptech Computer Education &lt;/td&gt;
-        &lt;td&gt;Busitema University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Cavendish University&lt;/td&gt;
-        &lt;td&gt;Clarke International University&lt;/td&gt;
-        &lt;td&gt;DAYSTAR University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Ernest Cook Ultrasound Research and Education Institute&lt;/td&gt;
-        &lt;td&gt;Gulu University&lt;/td&gt;
-        &lt;td&gt;ISBAT University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Islamic University In Uganda &lt;/td&gt;
-        &lt;td&gt;Jomo Kenyatta University of Technology&lt;/td&gt;
-        &lt;td&gt;Kampala International University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Kyambogo University&lt;/td&gt;
-        &lt;td&gt;Lira University&lt;/td&gt;
-        &lt;td&gt;Makerere University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Makerere University of Business School&lt;/td&gt;
-        &lt;td&gt;Mbarara University of Science and Technology&lt;/td&gt;
-        &lt;td&gt;Muni University&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Namasuba college of commerce &lt;/td&gt;
-        &lt;td&gt;Nexus International University&lt;/td&gt;
-        &lt;td&gt;Nkumba university&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Strathmore university&lt;/td&gt;
-        &lt;td&gt;Uganda Christian University&lt;/td&gt;
-        &lt;td&gt;Uganda Institute of ICT (UICT)&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Uganda Martyrs University&lt;/td&gt;
-        &lt;td&gt;Uganda Technology and Management University&lt;/td&gt;
-        &lt;td&gt;University of Nairobi&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Victoria University&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-
-&lt;p&gt;Participants have so far been drawn from 13 government Ministries/ Departments/Agencies.&lt;/p&gt;
-&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Ministry of Health&lt;/td&gt;
-        &lt;td&gt;National Water and Sewerage Corporation&lt;/td&gt;
-        &lt;td&gt;Uganda National Meteorological Authority&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;National Social Security Fund&lt;/td&gt;
-        &lt;td&gt;Ministry of ICT &amp; NG&lt;/td&gt;
-        &lt;td&gt;National Planning Authority&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;National IT Authority Uganda&lt;/td&gt;
-        &lt;td&gt;Uganda Electricity Distribution Company Limited&lt;/td&gt;
-        &lt;td&gt;Uganda Broadcasting Corporation&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Mulago National Referral Hospital&lt;/td&gt;
-        &lt;td&gt;Ministry of Public Service&lt;/td&gt;
-        &lt;td&gt;Uganda Registration Services Bureau&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Uganda Investment Authority&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;</content><author><name>Data Science Africa</name></author><summary type="html">Two members of the Lab are on the interim coordination team for setting up DSA Uganda network whose mission is an all-inclusive network of data scientists, enthusiasts, and organisations inspired to grow data science skills and their usage to contribute to Uganda's development aspirations, as started in the National Development Plan III (NDPIII). The network also has clear objectives and proposed activities for details visit the website: http://www.datascienceafrica.org/dsaUganda/ The network has so far organised three pre-launch events the details of follow in the next part of his annex.</summary></entry><entry><title type="html">Data Science Africa support</title><link href="/dsablog/2020/07/24/data-science-africa-support.html" rel="alternate" type="text/html" title="Data Science Africa support" /><published>2020-07-24T17:45:13+03:00</published><updated>2020-07-24T17:45:13+03:00</updated><id>/dsablog/2020/07/24/data-science-africa-support</id><content type="html" xml:base="/dsablog/2020/07/24/data-science-africa-support.html">&lt;p&gt;&lt;span class=&quot;text-secondary&quot;&gt;At a glance:&lt;/span&gt;&lt;br&gt;
-    396 individuals applied for the eventThe virtual event hosted by Makerere University attracted participation from East Africa and beyond as the sessions could be accessed virtually. &lt;span class=&quot;text-secondary&quot;&gt;Attendance by affiliation:&lt;/span&gt; academia, private sector, research institutions, government, and industry. &lt;span class=&quot;text-secondary&quot;&gt;Key DSA counterpart (s)&lt;/span&gt; Data Science Africa Network, Makerere University, Pulse Lab Kampala, Makerere AI Research Lab, AirQo , Facebook, Google. &lt;span class=&quot;text-secondary&quot;&gt;Sponsors:&lt;/span&gt; Facebook and ARM&lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Summer School on Machine Learning and Data Science &lt;/h2&gt;
-
-&lt;p&gt;The summer school on machine learning and data science targeted graduate students, researchers and professionals working with large quantities of data.  The sessions were spread across 4 days, 24&lt;sup&gt;th&lt;/sup&gt;, 25&lt;sup&gt;th&lt;/sup&gt;, 28&lt;sup&gt;th&lt;/sup&gt; and 29&lt;sup&gt;th&lt;/sup&gt; of July 2020. &lt;/p&gt;
-
-&lt;p&gt;The following 19 topics were covered;&lt;/p&gt;
-
-&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Introduction to Python &amp;amp; Jupyter Environment&lt;/td&gt;
-        &lt;td&gt;Classification and Regression&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Visualizing high dimensional data with PCA and tSNE&lt;/td&gt;
-        &lt;td&gt;Data Visualization : Communicating Insights and Results Effectively&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Anomaly Detection&lt;/td&gt;
-        &lt;td&gt;MD4SG: Mechanism Design for Social Good&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Introduction to Process Mining: Data Science in Action&lt;/td&gt;
-        &lt;td&gt;Global Challenges in Economics and Computation&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Introduction to Spatial Data Analysis&lt;/td&gt;
-        &lt;td&gt;Deep Learning Practicals&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Data for Good&lt;/td&gt;
-        &lt;td&gt;Computer Vision&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Natural Language Processing&lt;/td&gt;
-        &lt;td&gt;Social Media Data Analysis&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Trans-African HydroMeteorological Observatory (TAHMO)&lt;/td&gt;
-        &lt;td&gt;Machine Learning Systems, Streaming Data&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Exploring R for Spatial Analytic&lt;/td&gt;
-        &lt;td&gt;Ethics in ML for Health&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Data Engineering in Integrity/Security&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Workshop (30th July and 1st August)&lt;/h2&gt;
-
-&lt;p&gt;The workshops were organized around presentations of how application of data science methods are applied to problems relevant to Africa and last year in particular saw more presentations around agricultural solutions among other topics in the areas including: healthcare, social media, geospatial modelling, economic monitoring, resume writing, Internet Of Things and data science for the Sustainable Development Goals.&lt;/p&gt;
-
-&lt;p&gt;A panel discussion on Data Science Africa Uganda Network  was conducted. The panel discussion consisted of a dialogue on the benefits of growing local data science chapters that would duplicate the activities of data science to students, researchers and professionals at a local level (by region and districts) in Uganda. &lt;/p&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Countries that Participated&lt;/h2&gt;
-
-&lt;table class=&quot;table table-bordered table-striped table-hover&quot;&gt;
-    &lt;tr&gt;
-        &lt;td rowspan=&quot;6&quot; style=&quot;width: 20%;&quot;&gt;Africa (23 Countries)&lt;/td&gt;
-        &lt;td&gt;Benin&lt;/td&gt;
-        &lt;td&gt;Botswana&lt;/td&gt;
-        &lt;td&gt;Burkina Faso&lt;/td&gt;
-        &lt;td&gt;Burundi&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Cameroon&lt;/td&gt;
-        &lt;td&gt;Congo&lt;/td&gt;
-        &lt;td&gt;Côte d'Ivoire&lt;/td&gt;
-        &lt;td&gt;Egypt&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Ethiopia&lt;/td&gt;
-        &lt;td&gt;Ghana&lt;/td&gt;
-        &lt;td&gt;Kenya&lt;/td&gt;
-        &lt;td&gt;Libya&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Malawi&lt;/td&gt;
-        &lt;td&gt;Morocco&lt;/td&gt;
-        &lt;td&gt;Nigeria&lt;/td&gt;
-        &lt;td&gt;Rwanda&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;South Africa&lt;/td&gt;
-        &lt;td&gt;Sudan&lt;/td&gt;
-        &lt;td&gt;Tanzania&lt;/td&gt;
-        &lt;td&gt;Togo&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Zambia&lt;/td&gt;
-        &lt;td&gt;Zimbabwe&lt;/td&gt;
-        &lt;td&gt;Uganda&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td rowspan=&quot;4&quot;&gt;Outside of Africa (13 countries)&lt;/td&gt;
-        &lt;td&gt;Australia&lt;/td&gt;
-        &lt;td&gt;Bangladesh&lt;/td&gt;
-        &lt;td&gt;Czech Republic&lt;/td&gt;
-        &lt;td&gt;France&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;India&lt;/td&gt;
-        &lt;td&gt;Ireland&lt;/td&gt;
-        &lt;td&gt;Kuwait&lt;/td&gt;
-        &lt;td&gt;Poland&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;Russia&lt;/td&gt;
-        &lt;td&gt;Spain&lt;/td&gt;
-        &lt;td&gt;Sweden&lt;/td&gt;
-        &lt;td&gt;United Kingdom&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-        &lt;td&gt;United States&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-        &lt;td&gt;&lt;/td&gt;
-    &lt;/tr&gt;
-&lt;/table&gt;
-
-&lt;h2 class=&quot;section-heading&quot;&gt;Achievements of DSA since 2015&lt;/h2&gt;
-
-&lt;p&gt;Some of the achievements that DSA  has attained with the Labs collaboration since 2015 include:&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;Organised week long events in six African countries including Kenya, Uganda, Tanzania, Ghana, Nigeria and Ethiopia. End of this year these countries will have increased to eight with South Africa and Senegal.&lt;/li&gt;
-    &lt;li&gt;DSA has given out research grants each worth 10,000USD to 10 research teams across Africa, after a competitive application process with more 121 applications&lt;/li&gt;
-    &lt;li&gt;Attracted high level data science expertise from academia, private sector, civil society, governments, UN and NGO to instruct in summer schools and showcase their work in workshops - at their own cost travel and accommodation.&lt;/li&gt;
-    &lt;li&gt;DSA has received participation from 28 African countries, these countries are shared in Figure 1. &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;img class=&quot;img-fluid&quot; src=&quot;/dsablog/img/posts/participating-28-african-countries.jpg&quot; alt=&quot;Demo Image&quot;&gt;
-&lt;span class=&quot;caption text-muted&quot;&gt;Figure 1:  Map of Africa showing countries that have citizens that have participated or benefited from DSA since 2015.&lt;/span&gt;</content><author><name>Data Science Africa</name></author><summary type="html">At a glance: 396 individuals applied for the eventThe virtual event hosted by Makerere University attracted participation from East Africa and beyond as the sessions could be accessed virtually. Attendance by affiliation: academia, private sector, research institutions, government, and industry. Key DSA counterpart (s) Data Science Africa Network, Makerere University, Pulse Lab Kampala, Makerere AI Research Lab, AirQo , Facebook, Google. Sponsors: Facebook and ARM</summary></entry></feed>
+&lt;p&gt; &lt;a href=&quot;https://mamutorine.github.io/about/&quot;&gt;Project Background&lt;/a&gt;  | &lt;a href=&quot;http://www.datascienceafrica.org/dsa-visiting-fellowship/&quot;&gt;About Data Science Africa Visiting Fellowship &lt;/a&gt;&lt;/p&gt;
+&lt;em&gt; Reach out to: &lt;a href =&quot;mailto:amutorine@gmail.com&quot; target=&quot;blank&quot;&gt;Morine Amutorine&lt;/a&gt;&lt;/em&gt;
+&lt;p&gt;&lt;span class=&quot;caption text-muted&quot;&gt;Acknowledgements for data collection go to: &lt;b&gt;Wuraola Oyewusi, Ayomide Owoyemi, Ernest Mwebaze, Jessica Oyugi, Aurelle Tchagna Kouanou, Tamaro Green, Ezekiel Adebayo Ogundepo and Vasileios Lampos.&lt;/b&gt;&lt;/span&gt;&lt;/p&gt;</content><author><name>Morine Amutorine &amp; Jessica Montgomery</name></author><summary type="html">Data science communities across Africa have created - and are still developing - innovative uses of data and statistics to support Covid-19 response teams in mitigating the Covid-19 pandemic. These solutions aim to:</summary></entry></feed>
