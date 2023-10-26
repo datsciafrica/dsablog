@@ -1,91 +1,76 @@
 ---
 layout: post
-title: "Synergizing Data Science and Space Technology for addressing Key African Agricultural bottleneck
-subtitle: "Evidence from Ethiopia"
-date: 2023-10-26 11:15:13 -0400
+title: "How Can We Translate Data Science into Policy?"
+subtitle: "Reflections from Data Science Africa 2023"
+date: 2023-07-17 11:15:13 -0400
 background: "/img/DSC_1825.JPG"
-author: "Andualem Aklilu"
+author: "Morine Amutorine"
 ---
-
-Synergizing Data Science and Space Technology for addressing Key African Agricultural bottleneck: Evidence from Ethiopia
-By Andualem Aklilu
-
-<b>Why and How Satellite based Yield Prediction ?</b>
-<p>
-Smallholder farming is a predominant global agricultural system. In the developing world, it takes the lion share, for instance, in Ethiopia, it produced about 95% of main crops and cash crops. Despite its dominance, this farming practice, largely, is characterized by low crop productivity and absence of, and if there is any, the use of old-age unproductive technologies. Consequently, millions of societies around the globe are threatened by food insecurity. Countries like Ethiopia, for instance, imported 30% - 50% of their wheat demand annually. 
-</p>
-<p>
-With the fast advancement of space technologies, remote sensing (RS)-based prediction methods are preferred over traditional tiresome and costly ground surveys. In harnessing the potential of remote sensing technologies, optical and radar sensors, in their order, probably are the two widely explored technologies. Existing prediction methods, which often operate at national and regional scales, exploit the potential of the well-established coarse spatial and temporal resolution sensors. Nonetheless, the resolution of these sensors has limited their application for field-scale prediction in smallholder systems. Data mining methods are also the key components of prediction methods. Despite statistical methods are widely being exploited the new era methods: machine learning and deep learning present superior potential. 
-</p>
-<p>
-In this regard, this study was motivated to address some of challenges in yield prediction via setting threefold objective. First, the study aimed to evaluate the potential of selected vegetation indices derived from Sentinel-2 data that were representative of an optical sensor as wheat yield predictors. Second, it was set to evaluate the potential of selected SAR indices derived from Sentinel-1 data as wheat yield predictors. Third, we aimed to apply fast, reproducible, and open-source statistical, machine learning, and deep learning algorithms for wheat yield prediction.
-</p>
-<b>Key Findings</b>
-<p>
-This study aimed to develop a method for remote sensing-based wheat yield prediction. The study obtained predictors from vegetation indices derived from high-resolution optical and SAR sensors. Eight vegetation indices were computed from Sentinel-2 sensor, and five SAR indices were calculated from the Sentinel-1 sensor. In light of tapping the diverse potential, data mining methods, which are grouped under three broad categories: statistical, machine learning, and deep learning, were applied. 
-</p>
-<p>
-The combined-date SAR indices, such as SAR Normalized Difference (SND) and SAR Simple Ratio (SSR) showed relatively improved performance over single date SAR indices. Indices such as SND and SSR achieved values of 1.32 ton/ha and 1.20 ton/ha, and values of 1.24 ton/ha and 1.22 ton/ha for LOORMSE (leave-one-out RMSE) and RMSE, respectively. It is intuitive to expect combined-date indices integrating wider phenological information to outperform narrow ones, single date. 
-</p>
-<p>
-The most salient result of the current study is the successful application of an Automated Machine Learning platform, AutoML. The AutoML easily offers the 10 most powerful predictors (see figure 1) of the total 48 predictors considered. 
-
-Figure 1. A plot showing the top ten most influential variables using the GLM model.
-</p>
-<p>
-Discriminating the ten parameters, a stand-alone algorithm: the GLM model, which happens the best of all the tested algorithms, revealed an RMSE of 0.84–0.98 ton/ha for the mean population at a 99% confidence interval (CI) on the test dataset, while the performance on the training dataset was 0.84–0.88 ton/ha. Of all the predictors evaluated, leaf area index calculated at the post-grain-filling stage is the most influential one (see figure 1 above).
-</p>
-<p>
-Validation of results also implemented to come up with conclusive outputs (see figure 2). On the test dataset, six scatter plots for six GLM models using different seeds were computed. Accordingly, the correlation coefficient (r) between the estimated and measured yield ranges from 0.69 to 0.19.
+<p style="color:gray;"><em>“Consulting researchers for evidence is not in the culture of African leaders but it is our role to make them appreciate this approach.” A participant at a Data Science Africa event - 2023 - in Kigali</em></p>
+<p>Data Science Africa (DSA) has built a strong foundation of data literacy through its various programs and training events and continues to nurture a community of African data scientists. At a recent event in Kigali, the community sought to take the impact of DSA to another level by exploring the potential of research and projects to support effective data-driven policy-making in Africa.
+<br>
+<br>
+I was interested in this, having experienced firsthand the need to link data science with decision-making while working as a data analyst at UN Global Pulse Kampala. Last year, I worked with DSA to curate a series of talks, one-on-one conversations, and open discussions, all of which proved very enlightening. The aim was to empower participants to think beyond developing data-centric solutions and consider how data science might affect policy-making.</p>
 
 
-Figure 2. Scatter plots showing the performance of GLM on the test dataset for six randomly selected seeds. The red lines represent a 1:1 line between estimated and measured yields. Subfigures A–F refer to six plots prepared using six randomly generated numbers (seeds).
+<p>At the Kigali event, the highlight was an open discussion in which we examined challenges, explored our role as data scientists, and spotted opportunities for research on how data science can support policy.
+ <br>
+ <br>
+In a room full of data-driven solution developers, with only a handful of decision-makers, participants had a lively discussion that showed diverse perspectives. Yet a notable consensus was evident – a shared recognition of the role data scientists can play. 
 </p>
-<p>
-Modeling with deep neural nets, this study applied the three widely applied regularization techniques, which offer robust method via effectively managing the unnecessary complexities, inherent of such models. A model with three hidden layers with 55 neurons each and with the tanh dropout activation function showed improved performance. At a 99% confidence interval, the mean RMSE was 1.31–1.36 ton/ha on the test dataset (see table 1). 
 
+<!--h4>Where are these solutions located?</h4>
+<div>
+<img class="" alt="" src="{{site.baseurl}}/img/posts/map3.png" align="left" width="60%" style="padding:6px">
+<!-- <span class="caption text-muted">Figure 1: shows No of data-driven Covid-19 solutions collected by country (which is not a representation of all country solutions due to data collection limitations)</span> -->
 
-Table 1. Table showing RMSE (ton/ha) values at 99% CI for training, CV, and test datasets for three hidden layers.
-No
-Dataset 
-Mean (ton/ha)
-99% CI (ton/ha)
-p-Value
-t
-df
-1
-Train
-1.20 
-1.20–1.21
-<2.2 × 10−16
-360.58
-28
-2
-CV
-1.20 
-1.19–1.21
-<2.2 × 10−16
-259.10
-28
-3
-Test
-1.34
-1.31–1.36
-<2.2 × 10−16
-141.53
-28
-</p>
-<p>
-Overall, the GLM model employing the ten most influential parameters revealed the best prediction results. Thus, the developed method employs both the capability of the AutomL package as well as the capability of GLM to search for hyperparameters. In terms of performance, revealing higher wheat prediction capability, this combined approach seems synergetic and fast compared to the rest ones. 
-</p>
-<p>
-Moreover, as the study was implemented under a small dataset and because the AutoML offered the ten most influential parameters, this contributed to the obtained higher performance. From a practical perspective, this has invaluable significance. The efficient and effective training of machine learning models is often a very daunting task. Nonetheless, in this study, better results were obtained using an automated machine learning method that can be easily implemented by experts having limited skills. This implies the scalability of the approach to environments with limited access to well-skilled experts and robust off-the-shelf data mining platforms.
-</p>
-<b>Concluding Remarks</b>
-<p>
-A combined method, the AutoML with GLM hyperparameter tuning, showed higher performance over the rest of the methods. Millions of farmers across the African continent and beyond could take the advantage of the AutoML with GLM hyperparameter method to predict wheat yield. Moreover, it could be adapted to predict grain yields for other cereal. 
-</p>
-<b>Full article Link</b> 
-https://doi.org/10.3390/agriculture12091352.
+<p>Participants were asked what challenges they had experienced in translating data science solutions into pointers for practical policy. 
+ <br>
+ <be>
+<em>“It’s challenging to explain the data science solutions to policymakers,”</em> said one.
+ <br>
+ <be>
+<em>“The needs of decision-makers are ever-changing, making it hard to find or generate relevant and timely evidence,”</em> said another.
+ <br>
+ <be>
+A third noted: <em>“There are many other things that influence policy, e.g., politics, which hinder data use.” </em>
+ </p>
 
+<p> The discussion showed data scientists feel responsible for communicating their findings in ways that make sense to policymakers. 
+ <br>
+ <be>
+<em>“We need to begin projects with an end in mind,” said one. “We are not doing data-driven projects for the sake of it but so that the solutions can be utilized.”</em>
+ <br>
+ <be>
+<em>“We need to produce impact-oriented research, which takes time and probably more resources but increases the chances of it being used to inform decision-making,”</em> said another.
+ <br>
+ <br>
+A number of speakers noted the need for data scientists to try to understand policymakers and engage in conversations that can influence policies. Some went as far as to suggest that data scientists should start looking at playing other roles, <em>“not just coding”</em>, to increase the chances of influencing policy.
+<br>
+<be>
+ <em>“Consulting researchers for evidence is not in the culture of African leaders but it is our role to make them appreciate this approach,”</em> said one bold thinker.
+</p>
 
+<p> As our keynote speaker, we were lucky to have Diasmer Bloe, a strategy and evaluation professional from Data for Policy, a global forum for knowledge-sharing and collaboration on evidence-based practices. (Diasmer is the researcher on the Africa Engagement Project, which aims to boost African academic, industry, and policy participation in  the Data for Policy community.)  
+<br>
+<br>
+Diasmer enlightened us with valuable insights into data-driven policy-making and shed some light on how well it was going in Africa. She highlighted challenges in this area, which resonated with our concerns. For example, we learned that policymakers are increasingly interested in making use of data science but are still limited by their access to data, capacity to make sense of it, and financial resources. 
+<br>
+<br>
+My own involvement in facilitating these sessions has taught me that both data scientists and policymakers must bridge the gap between scientific findings and policy decisions.
+</p>
+
+<p>According to Data for Policy, policymakers need to learn how to be both consumers and producers of evidence. This requires them to learn about different data sources and data-driven methods. From our side, we data scientists need a better understanding of policymakers’ challenges in order to raise their confidence in data-driven projects.  
+<br>
+<br>
+Among prevailing issues, DSA recognizes the challenges with data discoverability, sharing, and interoperability; the limitations of human and technical capacities; and the legitimacy of public concerns. But the DSA community sees these challenges as opportunities, driving our work to strengthen policy with hard evidence.  
+ </p>
+
+<p> After the event, I was left pondering a question from the DSA chairperson, who asked: “Are there solid examples of use and impact that justify the need for data integration into policymaking?”
+In other words, is data science credible? What do we need to do to raise public trust? And how can we create a data-driven culture in public institutions? For community members, these are potential research questions. 
+<br>
+<br>
+Indeed, the journey ahead is exciting as we empower the community to innovate solutions and build policymakers’ trust. An interdisciplinary community with a shared interest in the potential and effect of data science on policy is only the first step. DSA wants members to explore more avenues and opportunities.
+<br>
+<br>
+We welcome your stories of successful data-centric solutions. If you would like to get in touch, you can contact DSA here: <a href="mailto:info@datascienceafrica.org">info@datascienceafrica.org</a> </p>
