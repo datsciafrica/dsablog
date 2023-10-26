@@ -23,6 +23,8 @@ With the fast advancement of space technologies, remote sensing (RS)-based predi
 </p>
 <p>
  <b>Key Findings</b> 
+ <br>
+ <br>
 This study aimed to develop a method for remote sensing-based wheat yield prediction. The study obtained predictors from vegetation indices derived from high-resolution optical and SAR sensors. Eight vegetation indices were computed from Sentinel-2 sensor, and five SAR indices were calculated from the Sentinel-1 sensor. In light of tapping the diverse potential, data mining methods, which are grouped under three broad categories: statistical, machine learning, and deep learning, were applied. 
 <br>
 <br>
@@ -31,17 +33,26 @@ The combined-date SAR indices, such as SAR Normalized Difference (SND) and SAR S
  <br>
  The most salient result of the current study is the successful application of an Automated Machine Learning platform, AutoML. The AutoML easily offers the 10 most powerful predictors (see figure 1) of the total 48 predictors considered. 
  <br>
+ <br>
+ <div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/barchart.png" width="100% center" style="padding:6px"></div>
+ <br>
  Figure 1. A plot showing the top ten most influential variables using the GLM model.
 Discriminating the ten parameters, a stand-alone algorithm: the GLM model, which happens the best of all the tested algorithms, revealed an RMSE of 0.84–0.98 ton/ha for the mean population at a 99% confidence interval (CI) on the test dataset, while the performance on the training dataset was 0.84–0.88 ton/ha. Of all the predictors evaluated, leaf area index calculated at the post-grain-filling stage is the most influential one (see figure 1 above).
  <br>
  <br>
  Validation of results also implemented to come up with conclusive outputs (see figure 2). On the test dataset, six scatter plots for six GLM models using different seeds were computed. Accordingly, the correlation coefficient (r) between the estimated and measured yield ranges from 0.69 to 0.19.
  <br>
+<br>
+<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/scatterplot.png" width="100% center" style="padding:6px"></div>
+<br>
  Figure 2. Scatter plots showing the performance of GLM on the test dataset for six randomly selected seeds. The red lines represent a 1:1 line between estimated and measured yields. Subfigures A–F refer to six plots prepared using six randomly generated numbers (seeds). performance. At a 99% confidence interval, the mean RMSE was 1.31–1.36 ton/ha on the test dataset (see table 1). 
   <br>
  <br>
  Table 1. Table showing RMSE (ton/ha) values at 99% CI for training, CV, and test datasets for three hidden layers.
  <br>
+<br>
+<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/table.png" width="100% center" style="padding:6px"></div>
+<br>
  Overall, the GLM model employing the ten most influential parameters revealed the best prediction results. Thus, the developed method employs both the capability of the AutomL package as well as the capability of GLM to search for hyperparameters. In terms of performance, revealing higher wheat prediction capability, this combined approach seems synergetic and fast compared to the rest ones. 
 <br>
  <br>
