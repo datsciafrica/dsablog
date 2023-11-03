@@ -31,31 +31,31 @@ This study aimed to develop a method for remote sensing-based wheat yield predic
 The combined-date SAR indices, such as SAR Normalized Difference (SND) and SAR Simple Ratio (SSR) showed relatively improved performance over single date SAR indices. Indices such as SND and SSR achieved values of 1.32 ton/ha and 1.20 ton/ha, and values of 1.24 ton/ha and 1.22 ton/ha for LOORMSE (leave-one-out RMSE) and RMSE, respectively. It is intuitive to expect combined-date indices integrating wider phenological information to outperform narrow ones, single date.
  <br>
  <br>
- The most salient result of the current study is the successful
-application of an Automated Machine Learning platform, AutoML. The
-AutoML easily offers the 10 most powerful predictors (see figure 1) of
+ The most salient result of the current study is the successful application of an Automated Machine Learning platform, AutoML. The AutoML easily offers the 10 most powerful predictors (see figure 1) of
 the total 48 predictors considered. The 10 influential predictors are:
+ <br>
 1. lai1020ha (leaf area index dated on October 20 per hectare)
-2. ndwi1010ha (normalized difference water index dated on
-October 10 per hectare)
+ <br>
+2. ndwi1010ha (normalized difference water index dated on October 10 per hectare)
+ <br>
 3. lai1010ha (leaf area index dated on October 10 per hectare)
-4. ndwi1015ha (normalized difference water index dated on
-October 15 per hectare)
-5. mcari1010ha (modified chlorophyll absorption ratio Index dated
-on October 10 per hectare)
-6. fapar1010ha (fraction of absorbed photosynthetically active
-radiation index dated on October 10 per hectare)
-7. ndwi1020ha (normalized difference water index dated on
-October 20 per hectare)
-8. vh1015ha (single date synthetic aperture radar cross polarized
-index dated on October 15 per hectare)
-9. ndi451010ha (normalized difference index using band 4 and 5
-dated on October 10 per hectare),
-10. fapar1005ha (fraction of absorbed photosynthetically active
-radiation index dated on October 05 per hectare)
+ <br>
+4. ndwi1015ha (normalized difference water index dated on October 15 per hectare)
+ <br>
+5. mcari1010ha (modified chlorophyll absorption ratio Index dated on October 10 per hectare)
+ <br>
+6. fapar1010ha (fraction of absorbed photosynthetically active radiation index dated on October 10 per hectare)
+ <br>
+7. ndwi1020ha (normalized difference water index dated on October 20 per hectare)
+ <br>
+8. vh1015ha (single date synthetic aperture radar cross polarized index dated on October 15 per hectare)
+ <br>
+9. ndi451010ha (normalized difference index using band 4 and 5 dated on October 10 per hectare),
+ <br>
+10. fapar1005ha (fraction of absorbed photosynthetically active radiation index dated on October 05 per hectare)
  <br>
  <br>
-<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/barchart.PNG" width="75% center" style="padding:6px"></div>
+<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/bar.png" width="75% center" style="padding:6px"></div>
  <br>
 <em>
  Figure 1. A plot showing the top ten most influential variables using the GLM model.
@@ -66,7 +66,7 @@ Discriminating the ten parameters, a stand-alone algorithm: the GLM model, which
  Validation of results also implemented to come up with conclusive outputs (see figure 2). On the test dataset, six scatter plots for six GLM models using different seeds were computed. Accordingly, the correlation coefficient (r) between the estimated and measured yield ranges from 0.69 to 0.19.
  <br>
 <br>
-<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/scatterplot.PNG" width="75% center" style="padding:6px"></div>
+<div style="text-align:center"><img class="" alt="" src="{{site.baseurl}}/img/plot.png" width="75% center" style="padding:6px"></div>
 <br>
 <em>
  Figure 2. Scatter plots showing the performance of GLM on the test dataset for six randomly selected seeds. The red lines represent a 1:1 line between estimated and measured yields. Subfigures A–F refer to six plots prepared using six randomly generated numbers (seeds). performance. At a 99% confidence interval, the mean RMSE was 1.31–1.36 ton/ha on the test dataset (see table 1). 
