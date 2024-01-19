@@ -1,4 +1,170 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.datascienceafrica.org/dsablog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.datascienceafrica.org/dsablog/" rel="alternate" type="text/html" /><updated>2022-04-07T09:35:49+03:00</updated><id>http://www.datascienceafrica.org/dsablog/feed.xml</id><title type="html">Data Science Africa Blog</title><subtitle>Home for everything DSA</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda</title><link href="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html" rel="alternate" type="text/html" title="COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda" /><published>2022-04-06T22:33:13+03:00</published><updated>2022-04-06T22:33:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html">&lt;p&gt;The growth in the use of smartphones in Uganda has facilitated the increase in Internet usage and internet subscribers in the country. The Internet has provided a fertile ground to generate huge amounts of information on various web and mobile based social media platforms. Social media platforms have overtaken traditional media in facilitating social interactions on real time events. The ever increasing number of social media users has resulted in an increase in social media content. This content has proven to be helpful for decision making.  However, since there are no restrictions and limitations on the content posted on social media platforms, it has turned out that some of the posted content is invalid, inaccurate, potentially and intentionally harmful. This poses a need to develop solutions that can be used to detect false information and misinformation in social media text. Several studies have sought and continue to detect negative and inaccurate content shared on social media platforms. However, most of this research has focused on the English language and thus these applications can not be used in contexts that include low resourced languages like Luganda, a major local language in Uganda that is also commonly used on social media platforms.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://www.datascienceafrica.org/dsablog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.datascienceafrica.org/dsablog/" rel="alternate" type="text/html" /><updated>2024-01-19T19:38:22+03:00</updated><id>http://www.datascienceafrica.org/dsablog/feed.xml</id><title type="html">Data Science Africa Blog</title><subtitle>Home for everything DSA</subtitle><author><name>Data Science Africa</name></author><entry><title type="html">Data Science Africa joins international partners to launch the International Computation and AI Network (ICAIN)</title><link href="http://www.datascienceafrica.org/dsablog/2024/01/19/data-science-africa-joins-international-partners-to-launch-icain.html" rel="alternate" type="text/html" title="Data Science Africa joins international partners to launch the International Computation and AI Network (ICAIN)" /><published>2024-01-19T17:45:13+03:00</published><updated>2024-01-19T17:45:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2024/01/19/data-science-africa-joins-international-partners-to-launch-icain</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2024/01/19/data-science-africa-joins-international-partners-to-launch-icain.html">&lt;p&gt;Data Science Africa in collaboration with The Swiss Federal Department of Foreign Affairs (FDFA), ETH Zurich, EPFL, the &lt;a href=&quot;https://ellis.eu/&quot;&gt;European Laboratory for Learning and Intelligent Systems (ELLIS)&lt;/a&gt;, the &lt;a href=&quot;https://www.cscs.ch/&quot;&gt;Swiss National Computing Centre (CSCS)&lt;/a&gt;, and the &lt;a href=&quot;https://www.lumi-supercomputer.eu/lumi-consortium/&quot;&gt;LUMI consortium&lt;/a&gt; launched the &lt;b&gt;International Computation and AI Network (ICAIN)&lt;/b&gt; at the World Economic Forum (WEF) 2024 in Davos. Its mission is to develop AI technologies that benefit society as a whole, as well as being accessible to all and sustainable, thereby helping to reduce global inequality.&lt;/p&gt;
+
+
+&lt;p&gt;Artificial intelligence (AI) is one of the most critical technologies of our time. It is set to radically transform our society, economy and politics, and also has the potential to combat global challenges such as climate change, pandemics and income inequality. Many countries are therefore trying to expand their AI capabilities and invest in the necessary infrastructure. But many potential players, especially in the Southern Hemisphere, have no access to the relevant technologies due to the high cost and shortage of key components.&lt;/p&gt;
+
+&lt;h4&gt;Sharing DSA’s unique perspective&lt;/h4&gt;
+&lt;p&gt;The founders of the &lt;b&gt;International Computation and AI Network&lt;/b&gt; want to open up access to supercomputing, data and software infrastructures, as well as AI know-how, to a wider community. The aim is to facilitate international research projects that benefit society as a whole and promote the United Nations Sustainability Development Goals (SDGs). &lt;/p&gt;
+
+&lt;p&gt;DSA will lead one of the pilot use cases of the network aimed at using artificial intelligence to make agriculture more resilient to the negative effects of climate change. This is an area DSA members have shown great expertise.  “For us, the cooperation with ICAIN is interesting because it opens up new opportunities for our members in the implementation of AI projects within the African context. We also want to share the unique expertise of DSA members for the benefit of others within the network,” says Professor Ciira Maina, Board Chair of Data Science Africa.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/icain-1.jpg&quot; width=&quot;100%&quot; height= &quot;100%&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;</content><author><name>Ciira Maina</name></author><summary type="html">Data Science Africa in collaboration with The Swiss Federal Department of Foreign Affairs (FDFA), ETH Zurich, EPFL, the European Laboratory for Learning and Intelligent Systems (ELLIS), the Swiss National Computing Centre (CSCS), and the LUMI consortium launched the International Computation and AI Network (ICAIN) at the World Economic Forum (WEF) 2024 in Davos. Its mission is to develop AI technologies that benefit society as a whole, as well as being accessible to all and sustainable, thereby helping to reduce global inequality.</summary></entry><entry><title type="html">Synergizing Data Science and Space Technology for Addressing Key African Agricultural Bottleneck</title><link href="http://www.datascienceafrica.org/dsablog/2023/10/26/synergizing-data-science.html" rel="alternate" type="text/html" title="Synergizing Data Science and Space Technology for Addressing Key African Agricultural Bottleneck" /><published>2023-10-26T18:04:13+03:00</published><updated>2023-10-26T18:04:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2023/10/26/synergizing-data-science</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2023/10/26/synergizing-data-science.html">&lt;b&gt;Why and How Satellite based Yield Prediction ?&lt;/b&gt;
+&lt;p&gt;Smallholder farming is a predominant global agricultural system. In the developing world, it takes the lion share, for instance, in Ethiopia, it produced about 95% of 
+ main crops and cash crops. Despite its dominance, this farming practice, largely, is characterized by low crop productivity and absence of, and if there is any, the use of 
+ old-age unproductive technologies. Consequently, millions of societies around the globe are threatened by food insecurity. Countries like Ethiopia, for instance, imported 
+ 30% - 50% of their wheat demand annually. 
+&lt;br&gt;
+&lt;br&gt;
+With the fast advancement of space technologies, remote sensing (RS)-based prediction methods are preferred over traditional tiresome and costly ground surveys. 
+ In harnessing the potential of remote sensing technologies, optical and radar sensors, in their order, probably are the two widely explored technologies. Existing 
+ prediction methods, which often operate at national and regional scales, exploit the potential of the well-established coarse spatial and temporal resolution sensors. 
+ Nonetheless, the resolution of these sensors has limited their application for field-scale prediction in smallholder systems. Data mining methods are also the 
+ key components of prediction methods. Despite statistical methods are widely being exploited the new era methods: machine learning and deep learning present superior potential.
+&lt;br&gt;
+&lt;br&gt;
+ In this regard, this study was motivated to address some of challenges in yield prediction via setting threefold objective. First, the study aimed to evaluate the potential of selected vegetation indices derived from Sentinel-2 data that were representative of an optical sensor as wheat yield predictors. Second, it was set to evaluate the potential of selected SAR indices derived from Sentinel-1 data as wheat yield predictors. Third, we aimed to apply fast, reproducible, and open-source statistical, machine learning, and deep learning algorithms for wheat yield prediction.
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;b&gt;Key Findings&lt;/b&gt; 
+ &lt;br&gt;
+ &lt;br&gt;
+This study aimed to develop a method for remote sensing-based wheat yield prediction. The study obtained predictors from vegetation indices derived from high-resolution optical and SAR sensors. Eight vegetation indices were computed from Sentinel-2 sensor, and five SAR indices were calculated from the Sentinel-1 sensor. In light of tapping the diverse potential, data mining methods, which are grouped under three broad categories: statistical, machine learning, and deep learning, were applied. 
+&lt;br&gt;
+&lt;br&gt;
+The combined-date SAR indices, such as SAR Normalized Difference (SND) and SAR Simple Ratio (SSR) showed relatively improved performance over single date SAR indices. Indices such as SND and SSR achieved values of 1.32 ton/ha and 1.20 ton/ha, and values of 1.24 ton/ha and 1.22 ton/ha for LOORMSE (leave-one-out RMSE) and RMSE, respectively. It is intuitive to expect combined-date indices integrating wider phenological information to outperform narrow ones, single date.
+ &lt;br&gt;
+ &lt;br&gt;
+ The most salient result of the current study is the successful application of an Automated Machine Learning platform, AutoML. The AutoML easily offers the 10 most powerful predictors (see figure 1) of
+the total 48 predictors considered. The 10 influential predictors are:
+ &lt;br&gt;
+ &lt;br&gt;
+1. lai1020ha (leaf area index dated on October 20 per hectare)
+ &lt;br&gt;
+2. ndwi1010ha (normalized difference water index dated on October 10 per hectare)
+ &lt;br&gt;
+3. lai1010ha (leaf area index dated on October 10 per hectare)
+ &lt;br&gt;
+4. ndwi1015ha (normalized difference water index dated on October 15 per hectare)
+ &lt;br&gt;
+5. mcari1010ha (modified chlorophyll absorption ratio Index dated on October 10 per hectare)
+ &lt;br&gt;
+6. fapar1010ha (fraction of absorbed photosynthetically active radiation index dated on October 10 per hectare)
+ &lt;br&gt;
+7. ndwi1020ha (normalized difference water index dated on October 20 per hectare)
+ &lt;br&gt;
+8. vh1015ha (single date synthetic aperture radar cross polarized index dated on October 15 per hectare)
+ &lt;br&gt;
+9. ndi451010ha (normalized difference index using band 4 and 5 dated on October 10 per hectare),
+ &lt;br&gt;
+10. fapar1005ha (fraction of absorbed photosynthetically active radiation index dated on October 05 per hectare)
+ &lt;br&gt;
+ &lt;br&gt;
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/bar.png&quot; width=&quot;75% height= &quot;100%&quot; center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+ &lt;br&gt;
+&lt;em&gt;
+ Figure 1. A plot showing the top ten most influential variables using the GLM model.
+Discriminating the ten parameters, a stand-alone algorithm: the GLM model, which happens the best of all the tested algorithms, revealed an RMSE of 0.84–0.98 ton/ha for the mean population at a 99% confidence interval (CI) on the test dataset, while the performance on the training dataset was 0.84–0.88 ton/ha. Of all the predictors evaluated, leaf area index calculated at the post-grain-filling stage is the most influential one (see figure 1 above).
+ &lt;/em&gt;
+ &lt;br&gt;
+ &lt;br&gt;
+ Validation of results also implemented to come up with conclusive outputs (see figure 2). On the test dataset, six scatter plots for six GLM models using different seeds were computed. Accordingly, the correlation coefficient (r) between the estimated and measured yield ranges from 0.69 to 0.19.
+ &lt;br&gt;
+&lt;br&gt;
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/plot.png&quot; width=&quot;75% height= &quot;75%&quot; center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+&lt;br&gt;
+&lt;em&gt;
+ Figure 2. Scatter plots showing the performance of GLM on the test dataset for six randomly selected seeds. The red lines represent a 1:1 line between estimated and measured yields. Subfigures A–F refer to six plots prepared using six randomly generated numbers (seeds). performance. At a 99% confidence interval, the mean RMSE was 1.31–1.36 ton/ha on the test dataset (see table 1). 
+ &lt;/em&gt; 
+ &lt;br&gt;
+ &lt;br&gt;
+&lt;em&gt;
+ Table 1. Table showing RMSE (ton/ha) values at 99% CI for training, CV, and test datasets for three hidden layers.
+ &lt;/em&gt;
+ &lt;br&gt;
+&lt;br&gt;
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/table.PNG&quot; width=&quot;100% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
+&lt;br&gt;
+ Overall, the GLM model employing the ten most influential parameters revealed the best prediction results. Thus, the developed method employs both the capability of the AutomL package as well as the capability of GLM to search for hyperparameters. In terms of performance, revealing higher wheat prediction capability, this combined approach seems synergetic and fast compared to the rest ones. 
+&lt;br&gt;
+ &lt;br&gt;
+Moreover, as the study was implemented under a small dataset and because the AutoML offered the ten most influential parameters, this contributed to the obtained higher performance. From a practical perspective, this has invaluable significance. The efficient and effective training of machine learning models is often a very daunting task. Nonetheless, in this study, better results were obtained using an automated machine learning method that can be easily implemented by experts having limited skills. This implies the scalability of the approach to environments with limited access to well-skilled experts and robust off-the-shelf data mining platforms.
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;b&gt;Concluding Remarks&lt;/b&gt;
+ &lt;br&gt;
+ &lt;br&gt;
+ A combined method, the AutoML with GLM hyperparameter tuning, showed higher performance over the rest of the methods. Millions of farmers across the African continent and beyond could take the advantage of the AutoML with GLM hyperparameter method to predict wheat yield. Moreover, it could be adapted to predict grain yields for other cereal. 
+&lt;/p&gt;
+&lt;p&gt;
+ &lt;a href=&quot;https://doi.org/10.3390/agriculture12091352&quot;&gt;Full Article Link &lt;/a&gt;
+&lt;/p&gt;</content><author><name>Andualem Aklilu</name></author><summary type="html">Why and How Satellite based Yield Prediction ? Smallholder farming is a predominant global agricultural system. In the developing world, it takes the lion share, for instance, in Ethiopia, it produced about 95% of main crops and cash crops. Despite its dominance, this farming practice, largely, is characterized by low crop productivity and absence of, and if there is any, the use of old-age unproductive technologies. Consequently, millions of societies around the globe are threatened by food insecurity. Countries like Ethiopia, for instance, imported 30% - 50% of their wheat demand annually. With the fast advancement of space technologies, remote sensing (RS)-based prediction methods are preferred over traditional tiresome and costly ground surveys. In harnessing the potential of remote sensing technologies, optical and radar sensors, in their order, probably are the two widely explored technologies. Existing prediction methods, which often operate at national and regional scales, exploit the potential of the well-established coarse spatial and temporal resolution sensors. Nonetheless, the resolution of these sensors has limited their application for field-scale prediction in smallholder systems. Data mining methods are also the key components of prediction methods. Despite statistical methods are widely being exploited the new era methods: machine learning and deep learning present superior potential. In this regard, this study was motivated to address some of challenges in yield prediction via setting threefold objective. First, the study aimed to evaluate the potential of selected vegetation indices derived from Sentinel-2 data that were representative of an optical sensor as wheat yield predictors. Second, it was set to evaluate the potential of selected SAR indices derived from Sentinel-1 data as wheat yield predictors. Third, we aimed to apply fast, reproducible, and open-source statistical, machine learning, and deep learning algorithms for wheat yield prediction. Key Findings This study aimed to develop a method for remote sensing-based wheat yield prediction. The study obtained predictors from vegetation indices derived from high-resolution optical and SAR sensors. Eight vegetation indices were computed from Sentinel-2 sensor, and five SAR indices were calculated from the Sentinel-1 sensor. In light of tapping the diverse potential, data mining methods, which are grouped under three broad categories: statistical, machine learning, and deep learning, were applied. The combined-date SAR indices, such as SAR Normalized Difference (SND) and SAR Simple Ratio (SSR) showed relatively improved performance over single date SAR indices. Indices such as SND and SSR achieved values of 1.32 ton/ha and 1.20 ton/ha, and values of 1.24 ton/ha and 1.22 ton/ha for LOORMSE (leave-one-out RMSE) and RMSE, respectively. It is intuitive to expect combined-date indices integrating wider phenological information to outperform narrow ones, single date. The most salient result of the current study is the successful application of an Automated Machine Learning platform, AutoML. The AutoML easily offers the 10 most powerful predictors (see figure 1) of the total 48 predictors considered. The 10 influential predictors are: 1. lai1020ha (leaf area index dated on October 20 per hectare) 2. ndwi1010ha (normalized difference water index dated on October 10 per hectare) 3. lai1010ha (leaf area index dated on October 10 per hectare) 4. ndwi1015ha (normalized difference water index dated on October 15 per hectare) 5. mcari1010ha (modified chlorophyll absorption ratio Index dated on October 10 per hectare) 6. fapar1010ha (fraction of absorbed photosynthetically active radiation index dated on October 10 per hectare) 7. ndwi1020ha (normalized difference water index dated on October 20 per hectare) 8. vh1015ha (single date synthetic aperture radar cross polarized index dated on October 15 per hectare) 9. ndi451010ha (normalized difference index using band 4 and 5 dated on October 10 per hectare), 10. fapar1005ha (fraction of absorbed photosynthetically active radiation index dated on October 05 per hectare) Figure 1. A plot showing the top ten most influential variables using the GLM model. Discriminating the ten parameters, a stand-alone algorithm: the GLM model, which happens the best of all the tested algorithms, revealed an RMSE of 0.84–0.98 ton/ha for the mean population at a 99% confidence interval (CI) on the test dataset, while the performance on the training dataset was 0.84–0.88 ton/ha. Of all the predictors evaluated, leaf area index calculated at the post-grain-filling stage is the most influential one (see figure 1 above). Validation of results also implemented to come up with conclusive outputs (see figure 2). On the test dataset, six scatter plots for six GLM models using different seeds were computed. Accordingly, the correlation coefficient (r) between the estimated and measured yield ranges from 0.69 to 0.19. Figure 2. Scatter plots showing the performance of GLM on the test dataset for six randomly selected seeds. The red lines represent a 1:1 line between estimated and measured yields. Subfigures A–F refer to six plots prepared using six randomly generated numbers (seeds). performance. At a 99% confidence interval, the mean RMSE was 1.31–1.36 ton/ha on the test dataset (see table 1). Table 1. Table showing RMSE (ton/ha) values at 99% CI for training, CV, and test datasets for three hidden layers. Overall, the GLM model employing the ten most influential parameters revealed the best prediction results. Thus, the developed method employs both the capability of the AutomL package as well as the capability of GLM to search for hyperparameters. In terms of performance, revealing higher wheat prediction capability, this combined approach seems synergetic and fast compared to the rest ones. Moreover, as the study was implemented under a small dataset and because the AutoML offered the ten most influential parameters, this contributed to the obtained higher performance. From a practical perspective, this has invaluable significance. The efficient and effective training of machine learning models is often a very daunting task. Nonetheless, in this study, better results were obtained using an automated machine learning method that can be easily implemented by experts having limited skills. This implies the scalability of the approach to environments with limited access to well-skilled experts and robust off-the-shelf data mining platforms. Concluding Remarks A combined method, the AutoML with GLM hyperparameter tuning, showed higher performance over the rest of the methods. Millions of farmers across the African continent and beyond could take the advantage of the AutoML with GLM hyperparameter method to predict wheat yield. Moreover, it could be adapted to predict grain yields for other cereal. Full Article Link</summary></entry><entry><title type="html">How Can We Translate Data Science into Policy?</title><link href="http://www.datascienceafrica.org/dsablog/2023/07/17/data-science-for-policy.html" rel="alternate" type="text/html" title="How Can We Translate Data Science into Policy?" /><published>2023-07-17T18:15:13+03:00</published><updated>2023-07-17T18:15:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2023/07/17/data-science-for-policy</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2023/07/17/data-science-for-policy.html">&lt;p style=&quot;color:gray;&quot;&gt;&lt;em&gt;“Consulting researchers for evidence is not in the culture of African leaders but it is our role to make them appreciate this approach.” A participant at a Data Science Africa event - 2023 - in Kigali&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Data Science Africa (DSA) has built a strong foundation of data literacy through its various programs and training events and continues to nurture a community of African data scientists. At a recent event in Kigali, the community sought to take the impact of DSA to another level by exploring the potential of research and projects to support effective data-driven policy-making in Africa.
+&lt;br&gt;
+&lt;br&gt;
+I was interested in this, having experienced firsthand the need to link data science with decision-making while working as a data analyst at UN Global Pulse Kampala. Last year, I worked with DSA to curate a series of talks, one-on-one conversations, and open discussions, all of which proved very enlightening. The aim was to empower participants to think beyond developing data-centric solutions and consider how data science might affect policy-making.&lt;/p&gt;
+
+
+&lt;p&gt;At the Kigali event, the highlight was an open discussion in which we examined challenges, explored our role as data scientists, and spotted opportunities for research on how data science can support policy.
+ &lt;br&gt;
+ &lt;br&gt;
+In a room full of data-driven solution developers, with only a handful of decision-makers, participants had a lively discussion that showed diverse perspectives. Yet a notable consensus was evident – a shared recognition of the role data scientists can play. 
+&lt;/p&gt;
+
+&lt;!--h4&gt;Where are these solutions located?&lt;/h4&gt;
+&lt;div&gt;
+&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/map3.png&quot; align=&quot;left&quot; width=&quot;60%&quot; style=&quot;padding:6px&quot;&gt;
+&lt;!-- &lt;span class=&quot;caption text-muted&quot;&gt;Figure 1: shows No of data-driven Covid-19 solutions collected by country (which is not a representation of all country solutions due to data collection limitations)&lt;/span&gt; --&gt;
+
+&lt;p&gt;Participants were asked what challenges they had experienced in translating data science solutions into pointers for practical policy. 
+ &lt;br&gt;
+ &lt;be&gt;
+&lt;em&gt;“It’s challenging to explain the data science solutions to policymakers,”&lt;/em&gt; said one.
+ &lt;br&gt;
+ &lt;be&gt;
+&lt;em&gt;“The needs of decision-makers are ever-changing, making it hard to find or generate relevant and timely evidence,”&lt;/em&gt; said another.
+ &lt;br&gt;
+ &lt;be&gt;
+A third noted: &lt;em&gt;“There are many other things that influence policy, e.g., politics, which hinder data use.” &lt;/em&gt;
+ &lt;/p&gt;
+
+&lt;p&gt; The discussion showed data scientists feel responsible for communicating their findings in ways that make sense to policymakers. 
+ &lt;br&gt;
+ &lt;be&gt;
+&lt;em&gt;“We need to begin projects with an end in mind,” said one. “We are not doing data-driven projects for the sake of it but so that the solutions can be utilized.”&lt;/em&gt;
+ &lt;br&gt;
+ &lt;be&gt;
+&lt;em&gt;“We need to produce impact-oriented research, which takes time and probably more resources but increases the chances of it being used to inform decision-making,”&lt;/em&gt; said another.
+ &lt;br&gt;
+ &lt;br&gt;
+A number of speakers noted the need for data scientists to try to understand policymakers and engage in conversations that can influence policies. Some went as far as to suggest that data scientists should start looking at playing other roles, &lt;em&gt;“not just coding”&lt;/em&gt;, to increase the chances of influencing policy.
+&lt;br&gt;
+&lt;be&gt;
+ &lt;em&gt;“Consulting researchers for evidence is not in the culture of African leaders but it is our role to make them appreciate this approach,”&lt;/em&gt; said one bold thinker.
+&lt;/p&gt;
+
+&lt;p&gt; As our keynote speaker, we were lucky to have Diasmer Bloe, a strategy and evaluation professional from Data for Policy, a global forum for knowledge-sharing and collaboration on evidence-based practices. (Diasmer is the researcher on the Africa Engagement Project, which aims to boost African academic, industry, and policy participation in  the Data for Policy community.)  
+&lt;br&gt;
+&lt;br&gt;
+Diasmer enlightened us with valuable insights into data-driven policy-making and shed some light on how well it was going in Africa. She highlighted challenges in this area, which resonated with our concerns. For example, we learned that policymakers are increasingly interested in making use of data science but are still limited by their access to data, capacity to make sense of it, and financial resources. 
+&lt;br&gt;
+&lt;br&gt;
+My own involvement in facilitating these sessions has taught me that both data scientists and policymakers must bridge the gap between scientific findings and policy decisions.
+&lt;/p&gt;
+
+&lt;p&gt;According to Data for Policy, policymakers need to learn how to be both consumers and producers of evidence. This requires them to learn about different data sources and data-driven methods. From our side, we data scientists need a better understanding of policymakers’ challenges in order to raise their confidence in data-driven projects.  
+&lt;br&gt;
+&lt;br&gt;
+Among prevailing issues, DSA recognizes the challenges with data discoverability, sharing, and interoperability; the limitations of human and technical capacities; and the legitimacy of public concerns. But the DSA community sees these challenges as opportunities, driving our work to strengthen policy with hard evidence.  
+ &lt;/p&gt;
+
+&lt;p&gt; After the event, I was left pondering a question from the DSA chairperson, who asked: “Are there solid examples of use and impact that justify the need for data integration into policymaking?”
+In other words, is data science credible? What do we need to do to raise public trust? And how can we create a data-driven culture in public institutions? For community members, these are potential research questions. 
+&lt;br&gt;
+&lt;br&gt;
+Indeed, the journey ahead is exciting as we empower the community to innovate solutions and build policymakers’ trust. An interdisciplinary community with a shared interest in the potential and effect of data science on policy is only the first step. DSA wants members to explore more avenues and opportunities.
+&lt;br&gt;
+&lt;br&gt;
+We welcome your stories of successful data-centric solutions. If you would like to get in touch, you can contact DSA here: &lt;a href=&quot;mailto:info@datascienceafrica.org&quot;&gt;info@datascienceafrica.org&lt;/a&gt; &lt;/p&gt;</content><author><name>Morine Amutorine</name></author><summary type="html">“Consulting researchers for evidence is not in the culture of African leaders but it is our role to make them appreciate this approach.” A participant at a Data Science Africa event - 2023 - in Kigali Data Science Africa (DSA) has built a strong foundation of data literacy through its various programs and training events and continues to nurture a community of African data scientists. At a recent event in Kigali, the community sought to take the impact of DSA to another level by exploring the potential of research and projects to support effective data-driven policy-making in Africa. I was interested in this, having experienced firsthand the need to link data science with decision-making while working as a data analyst at UN Global Pulse Kampala. Last year, I worked with DSA to curate a series of talks, one-on-one conversations, and open discussions, all of which proved very enlightening. The aim was to empower participants to think beyond developing data-centric solutions and consider how data science might affect policy-making.</summary></entry><entry><title type="html">COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda</title><link href="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html" rel="alternate" type="text/html" title="COVID-19 Misinformation Detection and Sentiment Analysis Models from Luganda" /><published>2022-04-06T22:33:13+03:00</published><updated>2022-04-06T22:33:13+03:00</updated><id>http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection</id><content type="html" xml:base="http://www.datascienceafrica.org/dsablog/2022/04/06/COVID-19-Misinformation-Detection.html">&lt;p&gt;The growth in the use of smartphones in Uganda has facilitated the increase in Internet usage and internet subscribers in the country. The Internet has provided a fertile ground to generate huge amounts of information on various web and mobile based social media platforms. Social media platforms have overtaken traditional media in facilitating social interactions on real time events. The ever increasing number of social media users has resulted in an increase in social media content. This content has proven to be helpful for decision making.  However, since there are no restrictions and limitations on the content posted on social media platforms, it has turned out that some of the posted content is invalid, inaccurate, potentially and intentionally harmful. This poses a need to develop solutions that can be used to detect false information and misinformation in social media text. Several studies have sought and continue to detect negative and inaccurate content shared on social media platforms. However, most of this research has focused on the English language and thus these applications can not be used in contexts that include low resourced languages like Luganda, a major local language in Uganda that is also commonly used on social media platforms.
     &lt;/p&gt;
 
 
@@ -21,7 +187,7 @@
             &lt;li&gt;Fake - statement is misleading.&lt;/li&gt;
             &lt;li&gt;Not_Fake - statement is not misleading.&lt;/li&gt;
             &lt;li&gt;Partially Fake - part of the statement is misleading.&lt;/li&gt;
-            &lt;li&gt;Others - scenarios where we couldn't prove whether the statement is false or not false.&lt;/li&gt;
+            &lt;li&gt;Others - scenarios where we couldn&apos;t prove whether the statement is false or not false.&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/li&gt;  
     &lt;li&gt;Aspect: Topics on COVID-19 which included: COVID-19, Cases, Standard Operating Procedures (SOPs), Non-pharmaceutical Interventions (NPIs), Truck drivers, Hospitals, Vaccine, Elections, Treatment, Testing, COVID-19 Impact, Border, COVID-19 Relief, Presidential address, Death&lt;/li&gt;
@@ -43,7 +209,7 @@
 
     &lt;p&gt;&lt;i&gt;Question 1: What is the spread of misinformation in the data obtained from Twitter compared to the data obtained from Facebook?&lt;/i&gt;&lt;/p&gt;
 
-    &lt;p&gt;To answer this question, we considered the misinformation label in the data.  Much as Twitter data was more than the Facebook data in terms of quantity, most of the data tagged with the &lt;strong&gt;'Fake'&lt;/strong&gt;, and &lt;strong&gt;'Partially Fake'&lt;/strong&gt; labels was the Facebook data. This can be attributed to the data that we obtained from Facebook that allowed us to include people’s comments to the Facebook posts compared to the Twitter data where we were restricted to only the posts made by the accounts scrapped. Moreover, Twitter has a limited tweet length of 280 characters compared to Facebook which means that while people make posts on Facebook, they are at liberty to write more which can turn out to be a source of misinformation. The demographic of Twitter and Facebook users is highly varied with more elites and corporate individuals on Twitter compared to Facebook. Corporates are more conscious about what they post and double check their posts or tweets.&lt;/p&gt;
+    &lt;p&gt;To answer this question, we considered the misinformation label in the data.  Much as Twitter data was more than the Facebook data in terms of quantity, most of the data tagged with the &lt;strong&gt;&apos;Fake&apos;&lt;/strong&gt;, and &lt;strong&gt;&apos;Partially Fake&apos;&lt;/strong&gt; labels was the Facebook data. This can be attributed to the data that we obtained from Facebook that allowed us to include people’s comments to the Facebook posts compared to the Twitter data where we were restricted to only the posts made by the accounts scrapped. Moreover, Twitter has a limited tweet length of 280 characters compared to Facebook which means that while people make posts on Facebook, they are at liberty to write more which can turn out to be a source of misinformation. The demographic of Twitter and Facebook users is highly varied with more elites and corporate individuals on Twitter compared to Facebook. Corporates are more conscious about what they post and double check their posts or tweets.&lt;/p&gt;
 
 
     &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-source.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
@@ -52,7 +218,7 @@
     
     &lt;p&gt;A categorization based on language was made to compare the levels of misinformation associated with a particular language. &lt;/p&gt;
 
-    &lt;p&gt;From this analysis, it was observed that most of the 'Fake' and 'Not Fake' posts were written in &lt;strong&gt;English&lt;/strong&gt; while most of the posts in  &lt;strong&gt;Luganda&lt;/strong&gt; and &lt;strong&gt;codemixed&lt;/strong&gt; were tagged as 'Not_Fake' or 'Others'.&lt;/p&gt;
+    &lt;p&gt;From this analysis, it was observed that most of the &apos;Fake&apos; and &apos;Not Fake&apos; posts were written in &lt;strong&gt;English&lt;/strong&gt; while most of the posts in  &lt;strong&gt;Luganda&lt;/strong&gt; and &lt;strong&gt;codemixed&lt;/strong&gt; were tagged as &apos;Not_Fake&apos; or &apos;Others&apos;.&lt;/p&gt;
 
     &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-language.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
 
@@ -60,7 +226,7 @@
     &lt;p&gt;&lt;i&gt;Question 3: What is the spread of misinformation in the social media data obtained in 2020 compared to data obtained in 2021?&lt;/i&gt;&lt;/p&gt;
 
 
-    &lt;p&gt;Generally, we observe that we had more posts with the misinformation labels:  &lt;strong&gt;'Fake'&lt;/strong&gt;, and &lt;strong&gt;'Partially Fake'&lt;/strong&gt; in 2021 compared to 2020. &lt;/p&gt;
+    &lt;p&gt;Generally, we observe that we had more posts with the misinformation labels:  &lt;strong&gt;&apos;Fake&apos;&lt;/strong&gt;, and &lt;strong&gt;&apos;Partially Fake&apos;&lt;/strong&gt; in 2021 compared to 2020. &lt;/p&gt;
 
     &lt;div style=&quot;text-align:center&quot;&gt;&lt;img class=&quot;&quot; alt=&quot;&quot; src=&quot;/dsablog/img/posts/misinformation-review-by-year.png&quot; width=&quot;60% center&quot; style=&quot;padding:6px&quot;&gt;&lt;/div&gt;
 
